@@ -4,7 +4,7 @@ title: TQ-001 Constraint-Based Round-Robin Schedule Generation
 description: Tracks the project design for deterministic round-robin fixture generation and constrained schedule placement.
 tags: [design, scheduling, round-robin, constraints]
 generated: { by: process:design-context, at: 2026-11-27T12:10:59Z }
-updated: { by: process:design-research, at: 2026-11-27T18:31:16Z }
+updated: { by: process:design-evaluate, at: 2026-11-27T18:41:00Z }
 ---
 
 # Design Report — TQ-001: Constraint-Based Round-Robin Schedule Generation
@@ -16,10 +16,10 @@ TQ-001 is a local project ticket with no external tracker integration. It define
 ## State
 
 ```yaml
-current_stage: evaluate
-completed_stages: [context-gathering, ceremony, frame, research]
+current_stage: solution
+completed_stages: [context-gathering, ceremony, frame, research, evaluate]
 selected_artifacts: []
-next_action: 'Commit the approved Research, then evaluate the three confirmed decision tracks'
+next_action: 'Commit the approved Evaluate artifacts, then produce the integrated Solution design'
 context_fingerprint: ''
 ```
 
@@ -58,7 +58,7 @@ context_fingerprint: ''
 | Ticket | TQ-001 |
 | Branch | `docs/tq-001-constraint-round-robin-scheduling` |
 | Status | 🔄 In Progress |
-| Phase | 🎯 Context Gathering ✅ · 🚀 Ceremony ✅ · 📋 Frame ✅ · 🔍 Research ✅ · 🏗 Evaluate 🔄 · 📦 Solution ⏳ · 🔎 Review ⏳ · 💬 Address Feedback ⏳ · 📤 Publish ⏳ · 🏁 Completion ⏳ |
+| Phase | 🎯 Context Gathering ✅ · 🚀 Ceremony ✅ · 📋 Frame ✅ · 🔍 Research ✅ · 🏗 Evaluate ✅ · 📦 Solution 🔄 · 🔎 Review ⏳ · 💬 Address Feedback ⏳ · 📤 Publish ⏳ · 🏁 Completion ⏳ |
 
 ---
 
@@ -67,15 +67,15 @@ context_fingerprint: ''
 <!-- design-metrics:start -->
 Source: [stat.json](stat.json). **Elapsed** = wall-clock time from the stage's first start to its completion (includes any wait). **Work** = summed observed work intervals (active effort) within that span. **Wait** = summed observed wait intervals (blocked on developer input, approval, or an external dependency) within that span. Work + Wait can read less than Elapsed when time went unclassified, or more after a retry reopened the stage. Durations are shown as `Xh Ym Zs`, rounded to the nearest second; open intervals are excluded from Elapsed/Work/Wait. Token subtotals have unavailable coverage; ticket usage is not allocated to individual units.
 
-Observed work: 29m 46s · Wait to date: 5h 40m 39s (closed 5h 40m 38s + current 0s) · Unclassified: 1m 32s
+Observed work: 34m 59s · Wait to date: 5h 42m 38s (closed 5h 42m 38s + current 0s) · Unclassified: 1m 42s
 
 | Stage | Started (UTC) | Completed (UTC) | Elapsed | Work | Wait | Input tokens | Output tokens | Coverage | Attempts | Failed checks |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | context-gathering (completed) | 2026-11-27T12:20:36.323Z | 2026-11-27T12:23:35.617Z | 2m 59s | 1m 2s | 1m 57s | unavailable | unavailable | from_tracking_start | 1 | 0 |
 | ceremony (completed) | 2026-11-27T12:24:07.747Z | 2026-11-27T12:37:25.696Z | 13m 18s | 1m 20s | 11m 58s | unavailable | unavailable | from_tracking_start | 1 | 0 |
 | frame (completed) | 2026-11-27T12:37:49.458Z | 2026-11-27T18:09:35.927Z | 5h 31m 46s | 5m 48s | 5h 25m 58s | unavailable | unavailable | from_tracking_start | 1 | 0 |
-| research (waiting) | 2026-11-27T18:10:07.589Z | unavailable | unavailable | 21m 36s | 45s | unavailable | unavailable | from_tracking_start | 1 | 0 |
-| evaluate (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
+| research (completed) | 2026-11-27T18:10:07.589Z | 2026-11-27T18:33:17.087Z | 23m 9s | 21m 36s | 1m 34s | unavailable | unavailable | from_tracking_start | 1 | 0 |
+| evaluate (waiting) | 2026-11-27T18:33:27.399Z | unavailable | unavailable | 5m 12s | 1m 11s | unavailable | unavailable | from_tracking_start | 1 | 0 |
 | solution (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
 | review-gate (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
 | address-feedback (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
@@ -131,6 +131,7 @@ _From Research OQ triage (2026-11-27)._
 | 2026-11-27 | Ceremony | Local ticket checkpoint auto-approved: TQ-001 was supplied by the developer, no external tracker is configured, and assignment or transition is not applicable. |
 | 2026-11-27 | Frame | 20 known requirements and 2 proposed requirements accepted; three independent decision tracks confirmed. |
 | 2026-11-27 | Research | `@architect` returned 11 options across Fixture and Placement Strategy (earliest-fit greedy, deterministic CSP backtracking, embedded CP-SAT), Validation and Failure Model (generator-coupled checks, independent pure whole-schedule validator, PostgreSQL constraint-led validation, independent constraint-model replay), and Preview and Persistence Protocol (tournament row lock, optimistic schedule revision, server-stored preview, serializable save); developer confirmed the set complete. |
+| 2026-11-27 | Evaluate | Recommended deterministic CSP backtracking, independent pure whole-schedule validation, and stateless preview with a tournament row lock. |
 
 ---
 
