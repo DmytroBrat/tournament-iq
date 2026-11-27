@@ -1,0 +1,217 @@
+{
+  "schema_version": 2,
+  "lifecycle": "design",
+  "design_revision": 0,
+  "ticket": "TQ-001",
+  "tracking_started_at": "2026-11-27T12:20:32.373Z",
+  "ticket_created_at": null,
+  "ticket_created_source": null,
+  "started_at": "2026-11-27T12:20:36.323Z",
+  "completed_at": null,
+  "coverage": "from_tracking_start",
+  "stages": [
+    {
+      "id": "context-gathering",
+      "status": "completed",
+      "attempts": [
+        {
+          "id": "b0c2ad33-1132-439d-aaf3-528f8ab354f9",
+          "started_at": "2026-11-27T12:20:36.323Z",
+          "ended_at": "2026-11-27T12:23:35.617Z",
+          "trigger": "initial",
+          "outcome": "completed"
+        }
+      ]
+    },
+    {
+      "id": "ceremony",
+      "status": "waiting",
+      "attempts": [
+        {
+          "id": "8d8bb636-2ef3-4698-9549-7f7c381b4f38",
+          "started_at": "2026-11-27T12:24:07.747Z",
+          "ended_at": null,
+          "trigger": "initial",
+          "outcome": null
+        }
+      ]
+    },
+    {
+      "id": "frame",
+      "status": "pending",
+      "attempts": []
+    },
+    {
+      "id": "research",
+      "status": "pending",
+      "attempts": []
+    },
+    {
+      "id": "evaluate",
+      "status": "pending",
+      "attempts": []
+    },
+    {
+      "id": "solution",
+      "status": "pending",
+      "attempts": []
+    },
+    {
+      "id": "review-gate",
+      "status": "pending",
+      "attempts": []
+    },
+    {
+      "id": "address-feedback",
+      "status": "pending",
+      "attempts": []
+    },
+    {
+      "id": "publish",
+      "status": "pending",
+      "attempts": []
+    },
+    {
+      "id": "completion",
+      "status": "pending",
+      "attempts": []
+    }
+  ],
+  "steps": [],
+  "intervals": [
+    {
+      "id": "5ab61f9c-e594-42e4-97b5-d3bb3d9368af",
+      "stage_id": "context-gathering",
+      "stage_attempt_id": "b0c2ad33-1132-439d-aaf3-528f8ab354f9",
+      "step": null,
+      "kind": "work",
+      "activity": "investigation",
+      "started_at": "2026-11-27T12:20:36.323Z",
+      "ended_at": "2026-11-27T12:20:56.729Z",
+      "last_observed_at": "2026-11-27T12:20:56.729Z"
+    },
+    {
+      "id": "a4e0c0b8-07a2-493b-89c8-175a29567697",
+      "stage_id": "context-gathering",
+      "stage_attempt_id": "b0c2ad33-1132-439d-aaf3-528f8ab354f9",
+      "step": null,
+      "kind": "wait",
+      "reason": "approval",
+      "detail": "Awaiting context-gathering sign-off",
+      "started_at": "2026-11-27T12:20:56.729Z",
+      "ended_at": "2026-11-27T12:22:53.960Z",
+      "last_observed_at": "2026-11-27T12:22:53.960Z"
+    },
+    {
+      "id": "98c11116-6ef7-4beb-b59c-31ed8ed97b14",
+      "stage_id": "context-gathering",
+      "stage_attempt_id": "b0c2ad33-1132-439d-aaf3-528f8ab354f9",
+      "step": null,
+      "kind": "work",
+      "activity": "investigation",
+      "started_at": "2026-11-27T12:22:53.960Z",
+      "ended_at": "2026-11-27T12:23:35.617Z",
+      "last_observed_at": "2026-11-27T12:23:35.617Z"
+    },
+    {
+      "id": "2cdeee17-9868-4b7d-8fc5-565cdf9637ec",
+      "stage_id": "ceremony",
+      "stage_attempt_id": "8d8bb636-2ef3-4698-9549-7f7c381b4f38",
+      "step": null,
+      "kind": "work",
+      "activity": "planning",
+      "started_at": "2026-11-27T12:24:07.747Z",
+      "ended_at": "2026-11-27T12:24:28.229Z",
+      "last_observed_at": "2026-11-27T12:24:28.229Z"
+    },
+    {
+      "id": "120347c6-7e7c-443e-9088-5ff40e1a57c4",
+      "stage_id": "ceremony",
+      "stage_attempt_id": "8d8bb636-2ef3-4698-9549-7f7c381b4f38",
+      "step": null,
+      "kind": "wait",
+      "reason": "approval",
+      "detail": "Awaiting ceremony branch checkout sign-off",
+      "started_at": "2026-11-27T12:24:28.229Z",
+      "ended_at": "2026-11-27T12:34:28.081Z",
+      "last_observed_at": "2026-11-27T12:34:28.081Z"
+    },
+    {
+      "id": "8917efdb-8d69-477d-bebe-832212b989f4",
+      "stage_id": "ceremony",
+      "stage_attempt_id": "8d8bb636-2ef3-4698-9549-7f7c381b4f38",
+      "step": null,
+      "kind": "work",
+      "activity": "planning",
+      "started_at": "2026-11-27T12:34:28.081Z",
+      "ended_at": "2026-11-27T12:35:23.272Z",
+      "last_observed_at": "2026-11-27T12:35:23.272Z"
+    },
+    {
+      "id": "e98f2b10-781a-4ecb-bf56-66d50e577194",
+      "stage_id": "ceremony",
+      "stage_attempt_id": "8d8bb636-2ef3-4698-9549-7f7c381b4f38",
+      "step": null,
+      "kind": "wait",
+      "reason": "user_input",
+      "detail": "Awaiting Ceremony commit confirmation",
+      "started_at": "2026-11-27T12:35:23.272Z",
+      "ended_at": null,
+      "last_observed_at": "2026-11-27T12:35:23.272Z"
+    }
+  ],
+  "checks": [
+    {
+      "id": "context-gathering-signoff-01",
+      "stage_id": "context-gathering",
+      "stage_attempt_id": "b0c2ad33-1132-439d-aaf3-528f8ab354f9",
+      "step": null,
+      "design_revision": 0,
+      "name": "Context Gathering sign-off",
+      "kind": "acceptance",
+      "started_at": "2026-11-27T12:23:18.629Z",
+      "ended_at": "2026-11-27T12:23:18.629Z",
+      "result": "passed",
+      "evidence_ref": "Developer confirmed project-level local TQ-001, requirements/TQ-001.md authority, focus areas, alternative evaluation, approval gates, and no application implementation during Design.",
+      "source": "developer",
+      "exit_code": null,
+      "signal": null
+    },
+    {
+      "id": "ceremony-signoff-01",
+      "stage_id": "ceremony",
+      "stage_attempt_id": "8d8bb636-2ef3-4698-9549-7f7c381b4f38",
+      "step": null,
+      "design_revision": 0,
+      "name": "Ceremony sign-off",
+      "kind": "acceptance",
+      "started_at": "2026-11-27T12:34:35.662Z",
+      "ended_at": "2026-11-27T12:34:35.662Z",
+      "result": "passed",
+      "evidence_ref": "Developer checked out docs/tq-001-constraint-round-robin-scheduling; verified with git branch --show-current.",
+      "source": "developer",
+      "exit_code": null,
+      "signal": null
+    }
+  ],
+  "usage_samples": [],
+  "metrics": {
+    "as_of": "2026-11-27T12:35:23.272Z",
+    "lead_time_seconds": null,
+    "cycle_time_seconds": null,
+    "observed_work_seconds": 137.736,
+    "observed_wait_seconds": 717.083,
+    "open_work_seconds": 0,
+    "open_wait_seconds": 0,
+    "wait_seconds_to_date": 717.083,
+    "unclassified_seconds": 36.08000000000004,
+    "rework_seconds": 0,
+    "blocked_seconds": 0,
+    "approval_wait_seconds": 717.083,
+    "failed_checks": 0,
+    "first_pass_verification_rate": 1,
+    "human_reported_seconds": null,
+    "tokens": null,
+    "token_coverage": "unavailable"
+  }
+}
