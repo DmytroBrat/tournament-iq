@@ -25,21 +25,29 @@
     },
     {
       "id": "ceremony",
-      "status": "waiting",
+      "status": "completed",
       "attempts": [
         {
           "id": "8d8bb636-2ef3-4698-9549-7f7c381b4f38",
           "started_at": "2026-11-27T12:24:07.747Z",
-          "ended_at": null,
+          "ended_at": "2026-11-27T12:37:25.696Z",
           "trigger": "initial",
-          "outcome": null
+          "outcome": "completed"
         }
       ]
     },
     {
       "id": "frame",
-      "status": "pending",
-      "attempts": []
+      "status": "waiting",
+      "attempts": [
+        {
+          "id": "d526deff-0d61-47fb-84a5-7378b379471e",
+          "started_at": "2026-11-27T12:37:49.458Z",
+          "ended_at": null,
+          "trigger": "initial",
+          "outcome": null
+        }
+      ]
     },
     {
       "id": "research",
@@ -156,8 +164,111 @@
       "reason": "user_input",
       "detail": "Awaiting Ceremony commit confirmation",
       "started_at": "2026-11-27T12:35:23.272Z",
+      "ended_at": "2026-11-27T12:37:21.183Z",
+      "last_observed_at": "2026-11-27T12:37:21.183Z"
+    },
+    {
+      "id": "3e69009b-5a0a-4e49-be3e-270fa638f2b3",
+      "stage_id": "ceremony",
+      "stage_attempt_id": "8d8bb636-2ef3-4698-9549-7f7c381b4f38",
+      "step": null,
+      "kind": "work",
+      "activity": "planning",
+      "started_at": "2026-11-27T12:37:21.183Z",
+      "ended_at": "2026-11-27T12:37:25.696Z",
+      "last_observed_at": "2026-11-27T12:37:25.696Z"
+    },
+    {
+      "id": "50b9a0e2-7061-4a55-8c69-0f7b2e4e48d8",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "kind": "work",
+      "activity": "planning",
+      "started_at": "2026-11-27T12:37:49.458Z",
+      "ended_at": "2026-11-27T12:41:11.733Z",
+      "last_observed_at": "2026-11-27T12:41:11.733Z"
+    },
+    {
+      "id": "d4e53921-6ff4-4518-bdf0-55fffa08a9ea",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "kind": "wait",
+      "reason": "approval",
+      "detail": "Awaiting decisions sign-off",
+      "started_at": "2026-11-27T12:41:11.733Z",
+      "ended_at": "2026-11-27T12:42:55.543Z",
+      "last_observed_at": "2026-11-27T12:42:55.543Z"
+    },
+    {
+      "id": "e09ecf7b-a16e-42e9-83ba-b5ab4fee15f3",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "kind": "work",
+      "activity": "planning",
+      "started_at": "2026-11-27T12:42:55.543Z",
+      "ended_at": "2026-11-27T12:43:10.234Z",
+      "last_observed_at": "2026-11-27T12:43:10.234Z"
+    },
+    {
+      "id": "5f1c98e7-d028-4e6b-8071-0758bb1ba515",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "kind": "wait",
+      "reason": "approval",
+      "detail": "Awaiting frame sign-off",
+      "started_at": "2026-11-27T12:43:10.234Z",
+      "ended_at": "2026-11-27T14:24:45.794Z",
+      "last_observed_at": "2026-11-27T14:24:45.794Z"
+    },
+    {
+      "id": "9a9673f2-cd54-490d-87e1-494ab7783ef5",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "kind": "work",
+      "activity": "planning",
+      "started_at": "2026-11-27T14:24:45.794Z",
+      "ended_at": "2026-11-27T14:26:09.034Z",
+      "last_observed_at": "2026-11-27T14:26:09.034Z"
+    },
+    {
+      "id": "df8d25bd-483b-46a3-960f-5b87f6a7ab12",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "kind": "wait",
+      "reason": "approval",
+      "detail": "Awaiting revised frame sign-off",
+      "started_at": "2026-11-27T14:26:09.034Z",
+      "ended_at": "2026-11-27T18:07:53.905Z",
+      "last_observed_at": "2026-11-27T18:07:53.905Z"
+    },
+    {
+      "id": "f77addc2-79e4-475b-ba8f-0cd31a378fc7",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "kind": "work",
+      "activity": "planning",
+      "started_at": "2026-11-27T18:07:53.905Z",
+      "ended_at": "2026-11-27T18:08:36.713Z",
+      "last_observed_at": "2026-11-27T18:08:36.713Z"
+    },
+    {
+      "id": "8527f3ba-59bf-4b95-8c5a-88d3b6e59699",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "kind": "wait",
+      "reason": "user_input",
+      "detail": "Awaiting Frame commit confirmation",
+      "started_at": "2026-11-27T18:08:36.713Z",
       "ended_at": null,
-      "last_observed_at": "2026-11-27T12:35:23.272Z"
+      "last_observed_at": "2026-11-27T18:08:36.713Z"
     }
   ],
   "checks": [
@@ -192,22 +303,54 @@
       "source": "developer",
       "exit_code": null,
       "signal": null
+    },
+    {
+      "id": "frame-decisions-signoff-01",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "design_revision": 0,
+      "name": "Frame decisions sign-off",
+      "kind": "acceptance",
+      "started_at": "2026-11-27T12:43:01.109Z",
+      "ended_at": "2026-11-27T12:43:01.109Z",
+      "result": "passed",
+      "evidence_ref": "Developer confirmed all three decision tracks: fixture/placement, validation/failure, and preview/persistence.",
+      "source": "developer",
+      "exit_code": null,
+      "signal": null
+    },
+    {
+      "id": "frame-signoff-01",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "design_revision": 0,
+      "name": "Frame sign-off",
+      "kind": "acceptance",
+      "started_at": "2026-11-27T18:07:58.574Z",
+      "ended_at": "2026-11-27T18:07:58.574Z",
+      "result": "passed",
+      "evidence_ref": "Developer approved the revised Frame with 20 known criteria and accepted PEC1 and PEC4; PEC2 and PEC3 were removed.",
+      "source": "developer",
+      "exit_code": null,
+      "signal": null
     }
   ],
   "usage_samples": [],
   "metrics": {
-    "as_of": "2026-11-27T12:35:23.272Z",
+    "as_of": "2026-11-27T18:08:36.713Z",
     "lead_time_seconds": null,
     "cycle_time_seconds": null,
-    "observed_work_seconds": 137.736,
-    "observed_wait_seconds": 717.083,
+    "observed_work_seconds": 485.263,
+    "observed_wait_seconds": 20339.235,
     "open_work_seconds": 0,
     "open_wait_seconds": 0,
-    "wait_seconds_to_date": 717.083,
-    "unclassified_seconds": 36.08000000000004,
+    "wait_seconds_to_date": 20339.235,
+    "unclassified_seconds": 59.84200000000055,
     "rework_seconds": 0,
     "blocked_seconds": 0,
-    "approval_wait_seconds": 717.083,
+    "approval_wait_seconds": 20221.324,
     "failed_checks": 0,
     "first_pass_verification_rate": 1,
     "human_reported_seconds": null,

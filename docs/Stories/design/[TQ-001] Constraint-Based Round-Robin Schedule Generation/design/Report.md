@@ -4,7 +4,7 @@ title: TQ-001 Constraint-Based Round-Robin Schedule Generation
 description: Tracks the project design for deterministic round-robin fixture generation and constrained schedule placement.
 tags: [design, scheduling, round-robin, constraints]
 generated: { by: process:design-context, at: 2026-11-27T12:10:59Z }
-updated: { by: process:design-ceremony, at: 2026-11-27T12:34:42Z }
+updated: { by: process:design-frame, at: 2026-11-27T18:08:04Z }
 ---
 
 # Design Report — TQ-001: Constraint-Based Round-Robin Schedule Generation
@@ -16,10 +16,10 @@ TQ-001 is a local project ticket with no external tracker integration. It define
 ## State
 
 ```yaml
-current_stage: frame
-completed_stages: [context-gathering, ceremony]
+current_stage: research
+completed_stages: [context-gathering, ceremony, frame]
 selected_artifacts: []
-next_action: 'Commit Context Gathering and Ceremony artifacts, then begin Frame'
+next_action: 'Commit the approved Frame, then research the three confirmed decision tracks'
 context_fingerprint: ''
 ```
 
@@ -58,7 +58,7 @@ context_fingerprint: ''
 | Ticket | TQ-001 |
 | Branch | `docs/tq-001-constraint-round-robin-scheduling` |
 | Status | 🔄 In Progress |
-| Phase | 🎯 Context Gathering ✅ · 🚀 Ceremony ✅ · 📋 Frame 🔄 · 🔍 Research ⏳ · 🏗 Evaluate ⏳ · 📦 Solution ⏳ · 🔎 Review ⏳ · 💬 Address Feedback ⏳ · 📤 Publish ⏳ · 🏁 Completion ⏳ |
+| Phase | 🎯 Context Gathering ✅ · 🚀 Ceremony ✅ · 📋 Frame ✅ · 🔍 Research 🔄 · 🏗 Evaluate ⏳ · 📦 Solution ⏳ · 🔎 Review ⏳ · 💬 Address Feedback ⏳ · 📤 Publish ⏳ · 🏁 Completion ⏳ |
 
 ---
 
@@ -67,13 +67,13 @@ context_fingerprint: ''
 <!-- design-metrics:start -->
 Source: [stat.json](stat.json). **Elapsed** = wall-clock time from the stage's first start to its completion (includes any wait). **Work** = summed observed work intervals (active effort) within that span. **Wait** = summed observed wait intervals (blocked on developer input, approval, or an external dependency) within that span. Work + Wait can read less than Elapsed when time went unclassified, or more after a retry reopened the stage. Durations are shown as `Xh Ym Zs`, rounded to the nearest second; open intervals are excluded from Elapsed/Work/Wait. Token subtotals have unavailable coverage; ticket usage is not allocated to individual units.
 
-Observed work: 1m 23s · Wait to date: 11m 57s (closed 11m 57s + current 0s) · Unclassified: 1m 27s
+Observed work: 7m 22s · Wait to date: 5h 38m 59s (closed 5h 38m 59s + current 0s) · Unclassified: 1m 39s
 
 | Stage | Started (UTC) | Completed (UTC) | Elapsed | Work | Wait | Input tokens | Output tokens | Coverage | Attempts | Failed checks |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | context-gathering (completed) | 2026-11-27T12:20:36.323Z | 2026-11-27T12:23:35.617Z | 2m 59s | 1m 2s | 1m 57s | unavailable | unavailable | from_tracking_start | 1 | 0 |
-| ceremony (active) | 2026-11-27T12:24:07.747Z | unavailable | unavailable | 20s | 10m 0s | unavailable | unavailable | from_tracking_start | 1 | 0 |
-| frame (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
+| ceremony (completed) | 2026-11-27T12:24:07.747Z | 2026-11-27T12:37:25.696Z | 13m 18s | 1m 20s | 11m 58s | unavailable | unavailable | from_tracking_start | 1 | 0 |
+| frame (active) | 2026-11-27T12:37:49.458Z | unavailable | unavailable | 5m 0s | 5h 25m 4s | unavailable | unavailable | from_tracking_start | 1 | 0 |
 | research (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
 | evaluate (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
 | solution (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
@@ -107,6 +107,7 @@ _Filled in during Research OQ triage. One row per open question answered or clas
 | ---- | ----- | ----- |
 | 2026-11-27 | Context Gathering | Resolved TQ-001 as a cross-container Project design against active HLD v1 and current manual scheduling behavior. |
 | 2026-11-27 | Ceremony | Local ticket checkpoint auto-approved: TQ-001 was supplied by the developer, no external tracker is configured, and assignment or transition is not applicable. |
+| 2026-11-27 | Frame | 20 known requirements and 2 proposed requirements accepted; three independent decision tracks confirmed. |
 
 ---
 
