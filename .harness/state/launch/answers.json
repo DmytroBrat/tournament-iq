@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "answers": {
+    "Q6": {
+      "question": "Select any nonempty set of Claude, Codex, and Copilot. Record canonical manifest destinations and one root instruction file per selected provider; use one shared bootstrap launch state.",
+      "value": "Codex only. .agents/skills, .codex/agents, .codex/config.toml, AGENTS.md and shared .harness/state.",
+      "source": "User selected only Codex in this conversation",
+      "status": "confirmed"
+    },
+    "Q1": {
+      "question": "Project purpose and why it exists",
+      "value": "Local football tournament management baseline for demonstrating the ArtiSyn Implementation Harness. Create tournaments, register teams and fields, add matches manually and view schedules.",
+      "source": "Initial project request and README.md",
+      "status": "confirmed"
+    },
+    "Q2": {
+      "question": "Languages, frameworks, runtime, datastore, cloud; propose from config. Also detect and confirm the monorepo tool (NX/Turborepo/Lerna/pnpm workspaces/none — single app) and the actual source directory layout (e.g. `apps/` + `libs/`, `apps/` only, `packages/`, no monorepo at all) from lockfiles/config, not from a fixed assumption. This is the authoritative source for `{{CODE_SCAN_TARGET}}` and `{{BUILD_UNIT_LABEL}}`, used by every canonical skill that describes scanning or building the codebase (`dev`, `where-we-are`, `war`) — resolve it once here so those skills don't each invent their own detection or default to NX-specific wording",
+      "value": "Java 21, Spring Boot 3, Maven Wrapper, JPA, Flyway, PostgreSQL 17, React 19, TypeScript, Vite, Tailwind, npm and Compose. Node 22.12+ for frontend setup. Independent backend/ and frontend/ application directories without a monorepo orchestrator; application or component build units. No cloud dependency.",
+      "source": "backend/pom.xml, frontend/package.json, frontend/package-lock.json, compose.yaml",
+      "status": "verified"
+    },
+    "Q3": {
+      "question": "Named containers/layers; drives `CONTAINER_LIST` and specialist scope",
+      "value": "Web, API, PostgreSQL. Web has one tournament workspace component; the API owns registrations and manual scheduling; PostgreSQL owns the persistent tournament store.",
+      "source": "compose.yaml and feature packages in backend/src/main/java/com/artisyn/tournamentiq",
+      "status": "verified"
+    },
+    "Q4": {
+      "question": "Primary data flow and integrations",
+      "value": "Browser uses same-origin REST through Nginx or the Vite dev proxy, then application services use JPA against PostgreSQL. Flyway runs at API startup. No external app integration.",
+      "source": "frontend/nginx.conf, frontend/src/api.ts, backend/src/main/resources/application.yml",
+      "status": "verified"
+    },
+    "Q5": {
+      "question": "Tracker (Jira/Linear/GitHub Issues/none); ticket prefix, tracker URL, optional Confluence/board details. Resolve actual ticket prefix separately from board URL parameters; never guess IDs",
+      "value": "No project tracker, prefix, wiki or board is configured for this launch. GitHub remote is used for Git; local Harness story IDs drive workflows.",
+      "source": "README.md and clean baseline project inventory",
+      "status": "verified"
+    },
+    "Q7": {
+      "question": "Commit format, branch naming, build/check commands, guarded commands",
+      "value": "Conventional Commits with optional scope. No established branch naming rule; Harness proposes feat/<local-id>-<slug> for a feature. Compose for the full stack, ./mvnw test in backend, npm ci and npm run build in frontend. Obtain explicit scope before commit, push, history rewrites, deployment, or deleting persistent data.",
+      "source": "Git history 15bff0a, README.md, backend/pom.xml and frontend/package.json",
+      "status": "verified"
+    },
+    "Q8": {
+      "question": "Confirmed NFR targets: availability, latency, residency, accessibility, cost, etc.; research applicable benchmarks and propose missing targets with sources and measurement conditions; confirm the target set before publishing NFRs. Record sizing workload/scenario assumptions here as well; unresolved proposals stay in the external run/design record",
+      "value": "Local demo only. No formal availability, capacity, latency, residency, accessibility or cost targets supplied; no published NFR commitments. Demo sample size is evidence of the seed only.",
+      "source": "Initial project request and compose.yaml",
+      "status": "verified"
+    },
+    "Q9": {
+      "question": "Team, pace, risks, other constraints",
+      "value": "Small extensible baseline. Automatic scheduling, fixture generation, optimization and minimum-rest rules are deferred to a separately authorized lifecycle. No external API, cloud or authentication dependencies for the baseline.",
+      "source": "Initial project request and README.md",
+      "status": "confirmed"
+    },
+    "Q10": {
+      "question": "Enabled Dev/Design/Skill/Architecture lifecycles; default all, Dev required",
+      "value": "Enable Dev, Design and Evolve. Architecture documentation for the baseline is installed; framework-dependent Architecture commands are inapplicable without a selected framework.",
+      "source": "Launch 01b selection table and local-only project scope",
+      "status": "verified"
+    },
+    "Q10b": {
+      "question": "If Design: Project-scoped (default), Product-context-scoped, or Two-track; propose from detected shared docs",
+      "value": "Project-scoped Design.",
+      "source": "Launch checklist default and context inventory",
+      "status": "verified"
+    },
+    "Q10c": {
+      "question": "If Product-context or Two-track: the shared folder's path under `project:docs/` (e.g. `docs/Harness`), or `none`; propose the detected folder or `docs/Product Context`. Record the path itself, not a description: OG writes it to `docs/.og/og.config.json` as `productDir`",
+      "value": "Inapplicable. No shared product context for Project-scoped Design.",
+      "source": "Q10b and context inventory",
+      "status": "verified"
+    },
+    "Q11": {
+      "question": "Azure/AWS/GCP/custom WAF with explicit pillars, or None; governs assessments and NFR output",
+      "value": "None. There is no cloud architecture framework or formal NFR assessment scope.",
+      "source": "Local demonstration scope and compose.yaml",
+      "status": "verified"
+    }
+  }
+}

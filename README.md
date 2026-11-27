@@ -23,7 +23,7 @@ Use Java 21, Node.js 22.12+ and npm. The included Maven Wrapper downloads the pi
 From the repository root, start PostgreSQL.
 
 ```sh
-docker compose up -d db
+docker compose up -d --wait db
 ```
 
 From `backend/`, start the API.
@@ -63,3 +63,7 @@ The API checks that teams differ, that the selected teams and field belong to th
 - `frontend/` contains the React, TypeScript, Vite, and Tailwind CSS interface.
 
 Run `./mvnw test` in `backend/` for the JUnit 5 unit and REST integration tests. Integration tests require Docker and start their own PostgreSQL instance through Testcontainers. Run `npm run build` in `frontend/` to type-check and build the web app.
+
+## Harness and architecture
+
+Use the [documentation index](docs/README.md) for architecture, component references and engineering conventions. In Codex, start `$dev` with an implementation task, `$design` with a design question, or `$evolve reflect` with a reusable process observation.

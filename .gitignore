@@ -3,3 +3,9 @@
 backend/target/
 frontend/node_modules/
 frontend/dist/
+
+# Artisyn implementation harness: generated state
+.harness/state/objects/
+.harness/state/launch/runs/
+.harness/state/launch/reports/
+.harness/state/launch/package.local.json

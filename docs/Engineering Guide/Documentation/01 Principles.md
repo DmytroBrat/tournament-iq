@@ -1,0 +1,230 @@
+---
+id: 34ee6f89
+type: Guide
+title: Documentation Principles
+description: Apply the shared format, evidence, diagram and acceptance rules for documentation.
+tags: [engineering-guide, harness]
+generated: { by: artisyn-harness/4.2, at: 2026-11-26T15:52:57Z }
+updated: { by: artisyn-harness/4.2, at: 2026-11-26T15:52:57Z }
+---
+
+# Documentation Principles
+
+_Why these principles exist, what they are, and which structure fits which doc type._
+
+---
+
+## Why
+
+Documentation degrades in two ways: it grows too long to read, or it grows too thin to trust. Both failures have the same root cause — the author did not have a rule for what belongs here versus somewhere else.
+
+These principles exist so that every document in this repo is worth reading: short enough to consume, precise enough to act on, and located where a future reader would look for it.
+
+A secondary reason: frontier AI models follow ~150–200 instructions reliably before quality degrades uniformly. Root context files (AGENTS.md) that exceed this budget dilute every instruction in them. The principles below apply to human-facing docs and AI-facing context files equally.
+
+Root context files should prioritize actionable project rules and links to detailed guidance; apply the document budgets below without removing essential information.
+
+---
+
+## Core doc principles
+
+Every permanent-doc writer — including the `docs-writer` agent — applies this full list before drafting and rereads the actual file against it before handing work to a reviewer. Nothing here is restated in agent instructions; an agent points here instead.
+
+**Separation of Concerns (SoC)** — each document covers one concern. If a README covers local setup _and_ architecture _and_ deployment, split it. Each topic goes where its audience looks: architecture to `docs/`, operations to `Engineering Guide/`, local setup to the app README.
+
+**Keep It Simple (KISS)** — write the minimum that is unambiguous. Prefer one sentence over three. Prefer a table over three paragraphs. Delete any sentence whose removal does not change the meaning.
+
+**Don't Repeat Yourself (DRY)** — each concept lives in one place. Everywhere else: one sentence + a link. Never duplicate content between an app README and the Engineering Guide. When the source changes, one edit is enough.
+
+**Progressive disclosure** — root context files point; they do not inline. A line that says "read X for Y" costs ~10–15 tokens and stays accurate indefinitely. Inlined content costs hundreds of tokens and drifts the moment the source is updated.
+
+**Length budget** — measured in prose lines only: Mermaid diagram blocks and tables never count against it, however long, since they carry information density prose can't match. Root context files (AGENTS.md and equivalents): 60–130 lines. Engineering Guide articles: under 150 lines. LLD container docs: under 120 lines. HLD container docs: under 80 lines. When prose still doesn't fit and the remaining content is genuinely essential, split a focused companion document along the natural topic boundary and link it — do this readily, not as a last resort fought over line-by-line; never compress essential coverage into dense, unreadable prose to stay under budget.
+
+**Certainty principle** — architecture docs (HLD, LLD, NFR) state only settled outcomes. No unresolved comparisons or open questions, and no Gaps, open-question or TODO placeholder sections — including empty "no gaps" declarations. Keep uncertainty in the external run, design or review record (`Stories/[TICKET] name/design/`). State approved targets separately from observed behavior; include rationale only when a decision source supports it. → See `docs/README.md`.
+
+**Contradictory evidence** — test material claims against counterexamples, not only supporting examples. Inspect conflicting code, configuration and decisions; narrow or correct claims when evidence differs. Record inspected scope, exceptions and resolution in the external review record. Absence of a counterexample in a sample is not proof of a universal rule.
+
+**Coverage keys over headings** — each Intent defines required semantic coverage as keys. Headings may vary: verify the coverage keys, not a fixed heading count or skeleton, and never invent content to fill a key. Record non-applicability in the verification record, not the document.
+
+**Don't auto-generate root context** — AGENTS.md and its equivalents are the highest-leverage files in the harness. Generate a scaffold from the bootstrap prompt, then edit by hand. Auto-generated root context is generic; hand-edited root context is precise.
+
+**Diagrams first** — port or create diagrams before writing prose. Every architecture doc needs at least one Mermaid diagram; add drill-down diagrams for complex sub-sections (deploy lifecycle, auth flow, data flow, topology). See Diagram and format standards below for ordering, coloring, and type selection.
+
+**Destination confirmation** — before writing, confirm the doc's tier against Documentation destination below; if the caller specifies a destination, trust it, but flag a destination that looks wrong before writing rather than after.
+
+**Operational graph frontmatter** — the docs tree is an Open Knowledge Format (OKF) 0.2 knowledge base. Every doc you write or update carries these keys, in this order:
+
+```yaml
+---
+id: f84dc7bb
+type: Container
+title: Discuss Container
+description: One line, what the doc is for
+tags: [discuss, giscus, hld]
+generated: { by: artisyn-harness/4.2, at: 2026-11-02T09:00:00Z }
+updated: { by: artisyn-harness/4.2, at: 2026-11-17T10:00:00Z }
+---
+```
+
+- `id` — the operational graph tool (`docs/.og/`) assigns it once. Never write or change it.
+- `type` — the kind of doc. A template sets it; otherwise `index --doc` stamps it from the tool's type map. After that the author owns it.
+- `title` — the doc's display name.
+- `description` and `tags` — required. Write them from your own understanding of the content; the tool never derives them. Update them when the content changes enough that they no longer fit.
+- `generated` — set once, when the doc is created. `updated` — set on every meaningful update.
+- `by` names a tool or a process, never a person, because the docs site is public: `artisyn-harness/<major.minor>` for an agent writer, `process:<lifecycle>-<stage>` for a lifecycle step (e.g. `process:design-publish`). `at` is ISO 8601 in UTC with a `Z` suffix.
+- Quote a value with single quotes when it holds a colon followed by a space or another YAML-reserved character (`#`, `[`, `]`, `{`, `}`, a leading quote). Use double quotes when the value itself contains a single quote.
+
+**`index.md` is navigation, never a doc** — each bundle root (`Target Architecture (HLD)/`, `System Architecture (LLD)/`, `Engineering Guide/`, `Stories/`, and the Product folder) has an `index.md` whose only frontmatter key is `okf_version: '0.2'`. Any other folder's `index.md` has no frontmatter. Its body is headings and `- [Title](relative-url) - description` bullets, one per doc in that folder, using each doc's `title` and `description`. Overview prose goes in `00 Overview.md`, not in `index.md`. When you add, rename, move or remove a doc, or change its description, update the bullets in its folder's `index.md` if the folder has one. When you write the first doc into a bundle that has no root `index.md`, create one. `log.md` is not used. The docs-site home, `docs/index.md`, is the one exception: it keeps its own site frontmatter.
+
+**Templates** — a lifecycle template starts with its own meta block (`name`, `description`, `type: reference`). Under it, a fenced `yaml` block holds the new doc's frontmatter. When you copy a template, replace the meta block with that fenced block, without the fences, and drop the comment above it. Fill in `title`, `description`, `tags`, `generated` and `updated`.
+
+---
+
+## Manner
+
+How the prose sounds, in every tier, every time. The principles above say what goes
+where; this says how it reads once it is there.
+
+**Technical.** Name the thing: the service, the file, the command, the port. "The
+Lambda@Edge handler checks the `Authorization` header" beats "a security layer
+validates access". No marketing, no adjectives doing the work of facts.
+
+**Simple words.** Short sentences, one idea each, active voice. Write the way you'd
+explain it to a colleague at the desk, not the way a spec sounds. If a reader needs
+to parse a sentence twice, split it.
+
+**Certain.** State what is. "The build runs on push to `main`." Not "the build
+should run", "is intended to run", "typically runs". If it is not certain, it is not
+settled, and settled is the entry ticket for a permanent doc (see the certainty
+principle). Hedges, qualifiers and "may/might/could" are a signal to go find out.
+
+**Lead with the core principle.** Every doc, and every major section, opens with
+the one rule or decision it exists to carry, in one sentence, before any detail.
+A reader who stops after the first line should leave with the point. Details,
+exceptions and history come after, never instead.
+
+**Concrete over abstract.** An example path, a real command, a measured number in a
+table. "Under 80 lines" beats "concise". A diagram of the actual flow beats a
+paragraph about "the flow".
+
+**No filler.** No preambles ("this document describes…"), no closing summaries that
+repeat the body, no "note that", no "it is important to". Delete the sentence; if
+nothing is lost, it was filler.
+
+**One term per concept.** Check `Documentation/07 Terminology.md` before naming a
+concept that already has an approved term there; use that term, not a synonym.
+Coining a new domain term that recurs across documents adds a row to the registry
+instead of staying implicit. This is the one constraint from ASD-STE100 (the
+aerospace controlled-language spec) worth keeping outside its own domain: consistent
+naming compounds across a growing doc set the way varied phrasing never does.
+
+A quick test before handing a doc over: read the first sentence of each section
+aloud. If it is a fact a reader can act on, the manner is right.
+
+---
+
+## Docs index
+
+`docs/README.md` is the navigation index for this repository's documentation.
+
+**When adding a new file** under any docs directory, add a corresponding entry to the matching section in `docs/README.md`. **When renaming or removing a file**, update or remove the matching entry.
+
+This is a project-specific invariant — AI tools and developers rely on it to discover docs without scanning the full tree.
+
+---
+
+## Documentation destination
+
+Every permanent doc lands in exactly one location. Confirm before writing.
+
+| Destination           | Path                              | What belongs here                                             |
+| --------------------- | --------------------------------- | ------------------------------------------------------------- |
+| **HLD**               | `docs/Target Architecture (HLD)/` | Design intent for containers, data flows, NFRs                |
+| **LLD**               | `docs/System Architecture (LLD)/` | Implementation detail grounded in what is actually built      |
+| **Engineering Guide** | `docs/Engineering Guide/`         | Cross-cutting conventions, operational procedures, onboarding |
+
+SoC test: _"Does this describe design intent for a container?"_ → HLD. _"Is this an implementation detail?"_ → LLD. _"Is this a convention the whole team follows?"_ → Engineering Guide.
+
+---
+
+## Wiring Principle
+
+Documentation is connected through progressive disclosure, not through one central index containing everything.
+
+`docs/README.md` provides only the root navigation and points readers to the appropriate documentation area. Each area then owns its local navigation, and individual documents use cross-links to connect related knowledge.
+
+The model is:
+
+Root index → Section navigation → Relevant document → Related documents
+
+The rules are simple: one source of truth per concept, link instead of duplicate, keep local navigation current, and add cross-links wherever they help a human or AI agent discover the next relevant piece of context.
+
+This creates multiple discovery paths without duplicating content, so both engineers and agents can progressively load only the context they need.
+
+---
+
+## Diagram and format standards
+
+**Applicability**: architecture documents need diagrams that explain actual structure and important sequences. Add drill-down diagrams where ordering, branching or ownership would otherwise be unclear. A checklist, convention or requirement table does not need a decorative diagram.
+
+**Format priority — apply in order:**
+
+1. Mermaid diagram — for any structural or flow concept
+2. Table — for structured comparisons, inventories, matrices
+3. Short bullet list — only when a table would not fit
+4. Prose — one-liner explanations only
+
+Never write as prose what can be a diagram. Never write as bullets what can be a table.
+
+**Coloring**: use semantically consistent colors supported by the diagram type. Flowcharts use `classDef` and subgraph `style`; sequence diagrams use supported theme/actor/region styling. Do not inject flowchart syntax into other diagram types.
+
+Default palette tokens — reuse these roles across all harness diagrams instead of inventing per-document colors: `context` (supporting elements: fill `#e2e8f0`, stroke `#475569`, text `#0f172a`) and `required` (the elements the diagram is about: fill `#dbeafe`, stroke `#1d4ed8`, text `#172554`). Extend with additional semantically named classes when a diagram needs more roles.
+
+**Diagram types by use case:**
+
+| Use case                                 | Type                                    |
+| ---------------------------------------- | --------------------------------------- |
+| System topology, component relationships | `flowchart TD` or `flowchart LR`        |
+| Deploy, auth, data lifecycle sequences   | `sequenceDiagram`                       |
+| Pipeline stages, state machines          | `flowchart LR` with labeled stage nodes |
+| Directory / folder structure             | `flowchart TD` with labeled nodes       |
+
+---
+
+## Authoring and acceptance
+
+Read this document and the applicable intent before drafting any generated document.
+Intents own semantic requirements; this file alone owns presentation and readability.
+After writing, reread the actual file against both before handing it to a reviewer.
+
+| Check              | Acceptance evidence in the external review record                                                      |
+| ------------------ | ------------------------------------------------------------------------------------------------------ |
+| Reader utility     | Identify the reader's concrete question and the section/diagram that answers it                        |
+| Structure and flow | Architecture shows ownership, dependencies and important sequences, not just a file inventory          |
+| Readability        | Prefer diagrams for structure/flow and tables for contracts/inventories; prose connects them briefly   |
+| Manner             | First sentence of each section is an actionable fact; wording is technical, simple, certain, no filler |
+| Specificity        | Rules and behavior have project evidence; targets have decision evidence; no generic filler            |
+| Claim challenge    | Material claims were checked for contradictory evidence; exceptions and resolutions are recorded       |
+| Separation         | Repeated setup/deployment/context facts live once and are linked where needed                          |
+| Completeness       | Essential information survives length limits; reserve focused companion docs when needed               |
+| Consistency        | Names, links, current/target distinctions and related documents agree                                  |
+
+A heading, line count or nonempty coverage field is not acceptance evidence. Record
+violations as actionable findings, correct them, and recheck before marking complete.
+Keep this review metadata outside published architecture. Document readiness does
+not imply measured system compliance. Render diagrams after the final writer edits.
+
+## How — doc-type cheat sheet
+
+| Doc type                                  | Structure                                                             | Length target |
+| ----------------------------------------- | --------------------------------------------------------------------- | ------------- |
+| Root context file (AGENTS.md) | WHY (2–3 sentences) → WHAT (rules + pointers) → HOW (skills / agents) | 60–130 lines  |
+| Engineering Guide article                 | Problem → Steps → Notes                                               | < 150 lines   |
+| HLD container doc                         | Coverage keys in `03 HLD Intent.md`                                   | < 80 lines    |
+| LLD component doc                         | Coverage keys in `04 LLD Intent.md`                                   | < 120 lines   |
+| Convention skill                          | Rule → Why → How to apply                                             | < 40 lines    |
+| Orchestrator skill                        | Orchestration pattern + per-phase invariants                          | < 60 lines    |
+| App README                                | What → How to run locally → Links to HLD + LLD                        | < 60 lines    |
+| ADR (Architecture Decision Record)        | Context → Decision → Consequences                                     | < 60 lines    |
+
+This document follows its own rules: it states why these principles exist, what they are, and how to apply them — nothing else.

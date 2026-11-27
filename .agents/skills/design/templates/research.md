@@ -1,0 +1,134 @@
+---
+name: Design Research Template
+description: Template for 01 Research.md — Phase 2 output listing 3–5 options with industry references, no recommendation
+type: reference
+---
+
+<!-- The new doc's frontmatter: put this block, without the fences, in place of the template meta above. -->
+
+```yaml
+---
+type: Design Research
+title: <title of the new doc>
+description: <one line, what this doc is for>
+tags: [<tag>, <tag>]
+generated: { by: process:design-research, at: <UTC now, e.g. 2026-11-18T10:00:00Z> }
+updated: { by: process:design-research, at: <same as generated> }
+---
+```
+
+# <TICKET>: <Short Title> — Research
+
+_Produced by the 🔍 Research phase. Owned by `{resolved architect agent}`. Do not edit after Evaluate phase begins._
+
+## Context
+
+<What triggered this design. What problem are we solving. Key constraints from `design/00 Frame.md` and the existing architecture that bound the options.>
+
+## Options
+
+### Option A — <Name>
+
+**Description:** <What this approach is. One paragraph.>
+
+**Industry precedent:** <Where this is used in the wild — named products, standards, or well-known patterns.>
+
+**Diagram:**
+
+```mermaid
+graph TD
+    classDef primary fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    classDef secondary fill:#7B68EE,stroke:#4B3AA8,color:#fff
+    classDef external fill:#E8F4FD,stroke:#4A90D9,color:#2C5F8A
+    classDef store fill:#F0F7EE,stroke:#5A8A5A,color:#2D4A2D
+
+    A[<component>] --> B[<component>]
+```
+
+**Pros:**
+
+- ...
+
+**Cons:**
+
+- ...
+
+**Unknowns / risks:**
+
+- ...
+
+---
+
+### Option B — <Name>
+
+**Description:**
+
+**Industry precedent:**
+
+**Diagram:**
+
+```mermaid
+graph TD
+    classDef primary fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    classDef secondary fill:#7B68EE,stroke:#4B3AA8,color:#fff
+    classDef external fill:#E8F4FD,stroke:#4A90D9,color:#2C5F8A
+    classDef store fill:#F0F7EE,stroke:#5A8A5A,color:#2D4A2D
+
+    A[<component>] --> B[<component>]
+```
+
+**Pros:**
+
+- ...
+
+**Cons:**
+
+- ...
+
+**Unknowns / risks:**
+
+- ...
+
+---
+
+### Option C — <Name>
+
+**Description:**
+
+**Industry precedent:**
+
+**Diagram:**
+
+```mermaid
+graph TD
+    classDef primary fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    classDef secondary fill:#7B68EE,stroke:#4B3AA8,color:#fff
+    classDef external fill:#E8F4FD,stroke:#4A90D9,color:#2C5F8A
+    classDef store fill:#F0F7EE,stroke:#5A8A5A,color:#2D4A2D
+
+    A[<component>] --> B[<component>]
+```
+
+**Pros:**
+
+- ...
+
+**Cons:**
+
+- ...
+
+**Unknowns / risks:**
+
+- ...
+
+---
+
+<!-- Add Option D, E as needed following the same structure (Description, Industry precedent, Diagram, Pros, Cons, Unknowns). Aim for 3–5 realistic alternatives. Include at least one "minimal change" option if valid. -->
+
+## Open Questions
+
+<Questions that must be answered before Evaluate can make a confident recommendation. Each question should have a suggested owner.>
+
+| #    | Question | Owner |
+| ---- | -------- | ----- |
+| OQ-1 | ...      | ...   |

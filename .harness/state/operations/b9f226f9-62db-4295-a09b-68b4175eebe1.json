@@ -1,0 +1,1444 @@
+{
+  "schema_version": 1,
+  "id": "b9f226f9-62db-4295-a09b-68b4175eebe1",
+  "mode": "launch",
+  "run_id": "20261126T153639Z-launch",
+  "providers": [
+    "codex"
+  ],
+  "status": "complete",
+  "outputs": [
+    {
+      "target": ".agents/skills/dev/interfaces/intent.md",
+      "provider": "codex",
+      "sha256": "14da7ed74520081091bbb5262247a098f8ab053674ba3582607636663929192e",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/patterns/announce-progress.md",
+      "provider": "codex",
+      "sha256": "c55c992a99c1f5ec28ac33ae0181254b1960715820784b638a1a2d3789b6adcf",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/patterns/approval-intelligent.md",
+      "provider": "codex",
+      "sha256": "ea4c59c138ba2ee3948f6d5886ec2c6ea6831461b8f9fd487ebe2e4ea319d7c2",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/patterns/approval-sign-off.md",
+      "provider": "codex",
+      "sha256": "41e5a1c3ceb16b709d28a7991aeca56c0beddd81972ce24c3fb68b433b7c219e",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/patterns/do-report-commit.md",
+      "provider": "codex",
+      "sha256": "79e9db5d54ddf5ecc34ca3931dbd4d9aa0722d1822d3667b079f6da32bae90eb",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/patterns/metrics.md",
+      "provider": "codex",
+      "sha256": "90ad5681e22bc30657a56c8b27e032f5ef4c347582c1f6ec364cc03957cea3d6",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/patterns/phase-sign-off.md",
+      "provider": "codex",
+      "sha256": "9964fd12d84c96ecec352dd43dbca403a722ee3f532014c9ed7491ab2d8e2065",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/patterns/review-gate.md",
+      "provider": "codex",
+      "sha256": "5a5c57f104a29a8cbb11191d2dc4b7ef1a82684691b3e780dcd32f582c8fbd18",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/patterns/satellite-review.md",
+      "provider": "codex",
+      "sha256": "a896910ba8e029b620b5d2acf4043097d9c657999da9cf9237ef00a2f6b2b96a",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/patterns/session-continuity.md",
+      "provider": "codex",
+      "sha256": "4497662cc5e0f3a7748dfe55124c3d3b0bb89688097ae1f9e888cace98ed357c",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/patterns/task-tracking.md",
+      "provider": "codex",
+      "sha256": "949b7e110b6cfe32bf1c4a4a90111f09ed57313b9b3e139b9219bfd16fd59c4f",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/patterns/write-confirm.md",
+      "provider": "codex",
+      "sha256": "e5ea574909f7af3148acf5d676619a675019f6fb6652c9fa2347761e9258fdca",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/references/00-router.md",
+      "provider": "codex",
+      "sha256": "134f768b8ec6d76c77e5ad0029245039469f783a85841aa34d2af507837ff329",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/references/01-context-gathering.md",
+      "provider": "codex",
+      "sha256": "76c5a47b730f1dee8fe82e032865d9385ce5ad0b7e2ac36cb799702d409baf68",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/references/02-ceremony.md",
+      "provider": "codex",
+      "sha256": "331d23ed2188f4f0f7152b797774962e2fa8adf3df4e2a88a599340344c983cc",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/references/03-plan.md",
+      "provider": "codex",
+      "sha256": "005375707fa63ecd08e296e33e5a39c7877787d5a9fe8b08848093e5767eafd4",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/references/04-implement.md",
+      "provider": "codex",
+      "sha256": "1b761219b9a17baccd3ceddcefe726cd7effba7f689944b958f7c2ccab72dd69",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/references/05-test.md",
+      "provider": "codex",
+      "sha256": "648333ed808fdfb66b5f79bc750d65f118697d4b79aef055f63c87cc2d21e5bc",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/references/06-document.md",
+      "provider": "codex",
+      "sha256": "11b622949e852fe94bac2b710ca3b210b615f05bce0be33d3b592f13ad609d58",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/references/07-completion.md",
+      "provider": "codex",
+      "sha256": "d5b2d384d4200fd3d2e611d3b6fe309940a591eb6957e3cb15ad4a754caece02",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/scripts/constants.mjs",
+      "provider": "codex",
+      "sha256": "f146f7191dc328a1277d36c6394298b233e87a0aafe27855c14b0500b1d02af3",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/scripts/quality.mjs",
+      "provider": "codex",
+      "sha256": "22056ce878baf70a6effda07fd3e39712308461df45193ebcb32b6228cf07de4",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/scripts/quality.test.mjs",
+      "provider": "codex",
+      "sha256": "a15dca2ca2ac0d2bcbe115a6e7038dd30f81f523d79e851a6c53448068bd3b6b",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/scripts/timing.mjs",
+      "provider": "codex",
+      "sha256": "89e9189a8f4ddca11d19dbbf4ba817264afa59397cc743e379bef5b4c54c30aa",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/scripts/timing.test.mjs",
+      "provider": "codex",
+      "sha256": "7a2345f5e964afd98b103451deabc2f0a22b466a1ab4876f48301b022ae8decb",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/scripts/utils.mjs",
+      "provider": "codex",
+      "sha256": "3d5ed3bb6cdfaee0ec34f29956cbe6512d95383319680514bf982948e1a520da",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/SKILL.md",
+      "provider": "codex",
+      "sha256": "4fec8ecf270371f473f75070f537561bc098753846ad3415a584a6cc272d9a98",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/templates/plan.md",
+      "provider": "codex",
+      "sha256": "3513eecbb8216015f58c72f45a6ffa588b74e724ed413b9a963a33e2a5534ec1",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/templates/report.md",
+      "provider": "codex",
+      "sha256": "0d666fa071a3c1902b100e4a2f978994bc03a0f51de56ca1d92d7b47f45f150a",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/templates/stat.json",
+      "provider": "codex",
+      "sha256": "f6f0679edb987e0d8ce630a064987ed79e9657b964cc8d2e6982c6fa279a9f56",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/templates/stat.schema.json",
+      "provider": "codex",
+      "sha256": "7a4a6ea46f6aebd560268c862faa673c95c6480a42502feb894504150a8d843b",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/runtime/planning.md",
+      "provider": "codex",
+      "sha256": "092ce683b3f842e3c82124248a72b3f8bdde481c01b8d180939d54438a03b881",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/runtime/task-tracking.md",
+      "provider": "codex",
+      "sha256": "1969af7d8ba7ddf91bac82c3af440ff57754065a8588e25c296ab4d1c8556811",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/runtime/delegation.md",
+      "provider": "codex",
+      "sha256": "ac26f76079b9f586915860c1f37f7c3c8643c346d68750a884ad45f80ddb1705",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/runtime/interaction.md",
+      "provider": "codex",
+      "sha256": "03a09bc8308f4a370c070b77042f68a6b1ec1d3662f0fcaf24f52752408ee612",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/runtime/context.md",
+      "provider": "codex",
+      "sha256": "066253e5e0dedf232ad842f82b86d6741e52f40c063bd0503ce7249e4667ef69",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/runtime/browser.md",
+      "provider": "codex",
+      "sha256": "d21bb18d08213e9542563c2905b2943d6a54fabef91fd4fc8b0cc07a4e87cfe5",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/runtime/credentials.md",
+      "provider": "codex",
+      "sha256": "d89a348add3d897bdfa92fa2624aaaecb959c0c60c0fcb7311801f8ac2ed949d",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/dev/runtime/review.md",
+      "provider": "codex",
+      "sha256": "b46a2ad5b6797d4a86c4e01226518824771551f0548395545bc53d664f17fbc7",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/interfaces/architecture.md",
+      "provider": "codex",
+      "sha256": "9cf39916c24401ca61d5f64193e79c5dc9b26c3a2065845139a8221bb7ffbb1e",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/interfaces/contract.md",
+      "provider": "codex",
+      "sha256": "76e88abe059f0731932cae197d4b40098eec125615e9945c52e29528139e3f1f",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/interfaces/design.md",
+      "provider": "codex",
+      "sha256": "e4a5c7ed3556ed6d12232672f88d9584e7db9b1f7ca531a60409b004f558da96",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/interfaces/efforts.md",
+      "provider": "codex",
+      "sha256": "a35de1183c92b1958b4ae8a92aac949da386d707b04baef0bdef2f4b12a4e3cb",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/interfaces/stack.md",
+      "provider": "codex",
+      "sha256": "5ad6c5bafe68120879b9971d73a9c6e12145d414f8aad313e85b88ed76e2f208",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/patterns/announce-progress.md",
+      "provider": "codex",
+      "sha256": "819c43f4db20b0c78441f62c5bfba3bba74ee7da1b5880714cbb3bbb9a16041f",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/patterns/approval-intelligent.md",
+      "provider": "codex",
+      "sha256": "ea4c59c138ba2ee3948f6d5886ec2c6ea6831461b8f9fd487ebe2e4ea319d7c2",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/patterns/approval-sign-off.md",
+      "provider": "codex",
+      "sha256": "5d2106c9dfa335a0aa46bfdae2023b3b1e38784901dde93e97b6e1959fa82927",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/patterns/design-architect-review.md",
+      "provider": "codex",
+      "sha256": "564d60430f652d61a7d68aa8528062ee10602f7ee1cb1be316d54affd8c9cebd",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/patterns/design-oq-triage.md",
+      "provider": "codex",
+      "sha256": "64334c6ad7b6efc1c551bd6ba7971239dde822c3d6ac1730fd60195ec7b3fbf4",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/patterns/design-quality-gate.md",
+      "provider": "codex",
+      "sha256": "26d769a2a76a69f86c31ad2d2afba504927a1ddb0ecde5ba058e49815d33ae09",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/patterns/do-report-commit.md",
+      "provider": "codex",
+      "sha256": "d23350185d655d0669a3ce9ff2e89471d946d3bd498403094f6a2c1816cda51e",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/patterns/docs-writer-authoring.md",
+      "provider": "codex",
+      "sha256": "228fb0c498152bd334cea285808d8795dd17379633e4dda2e42561d2080ce06b",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/patterns/metrics.md",
+      "provider": "codex",
+      "sha256": "3e9db9ab66062709a25f321243f84a21f1a888df2969bd500002e6874185d94f",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/patterns/multi-decision-split.md",
+      "provider": "codex",
+      "sha256": "8803026c8128f9c4e39d3ef61b12201fecc45f8db2404b1d5d45e23bd3101bf7",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/patterns/phase-sign-off.md",
+      "provider": "codex",
+      "sha256": "46ebc003aaa04f9cb5d63eab9b3e276d73e7ac95fed73d7d58aa6e1c6598efd9",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/patterns/satellite-review.md",
+      "provider": "codex",
+      "sha256": "a2f6e727792ecbd32bdee573c879dc8877ce35bc5c9fd7b18bd4025bc1f33ef0",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/patterns/session-continuity.md",
+      "provider": "codex",
+      "sha256": "b7955ee2aed71c58869c118b9f0462ae2ebf8ced3b85ba6166f1c3216323e6ee",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/patterns/task-tracking.md",
+      "provider": "codex",
+      "sha256": "324b2fe2ad3266820c2d64a9ef9d0910367a1e9d8ba81b805bab65d3a440564f",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/patterns/write-confirm.md",
+      "provider": "codex",
+      "sha256": "07fb32e905308834eef6c1eff84bb07543831ed28c935b4576b1745f263ee09b",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/references/00-decision-router.md",
+      "provider": "codex",
+      "sha256": "33635dc8e3afc7bef0798ac10bbbb0623d21dc60febe0128656064c8b265608b",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/references/00-router.md",
+      "provider": "codex",
+      "sha256": "bbecb20d21b8427a1f2d0f25485f84e22f813aa4bb7e579b64e98994267ca9d6",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/references/01-context-gathering.md",
+      "provider": "codex",
+      "sha256": "091db538754df595a14e200c9aa72fd00a2908d8da5cf0ea75f05b55ad56167f",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/references/02-ceremony.md",
+      "provider": "codex",
+      "sha256": "0dc3b9a14faddd6f9773c876f224f3618f4e33af5ed4dae30bd44940292983ab",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/references/03-frame.md",
+      "provider": "codex",
+      "sha256": "b31712eae346929ab4fa599a8a40a3b3f3595b87ab5b0d28fbf069f26becd168",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/references/04-research.md",
+      "provider": "codex",
+      "sha256": "0157d5f8bb671f2b61f419035c834621e84056b1f2e21c765a02d9f12c2ff4fc",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/references/05-evaluate.md",
+      "provider": "codex",
+      "sha256": "740515897261da0a35af1be5453a049da5e1595a639141c8f822c3a4db36320f",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/references/06-solution.md",
+      "provider": "codex",
+      "sha256": "d38523df4a558552241715277c9b4d67f2fb629a72b223f759da5abff8712982",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/references/07-review-gate.md",
+      "provider": "codex",
+      "sha256": "0fb91fbaca3968df22d3567d5b105a0dae917c668c5cffacb87446e77d505636",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/references/08-address-feedback.md",
+      "provider": "codex",
+      "sha256": "5bee8d2c635324822afe0be631e112c94dc3f037907f4bf454b07329091911a3",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/references/09-publish.md",
+      "provider": "codex",
+      "sha256": "cc9e19ce09fb55d721e0532acbb70a626a87599e5ef5d86904d18f7b17573ff9",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/references/10-completion.md",
+      "provider": "codex",
+      "sha256": "e7a0263e685e108c2d19637a1125314ae6a0692c56b020db97e8dd1e8e50b602",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/scripts/constants.mjs",
+      "provider": "codex",
+      "sha256": "72590a7f39e6220c2b73193b27d2cb80243231a39de1fce1ea726ca3491218c1",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/scripts/design-metrics.mjs",
+      "provider": "codex",
+      "sha256": "bf96d175cd80b78fa8d3ee1a2c5258728f9eceba4093e8f091e7ef4cf6eb21e8",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/scripts/design-metrics.test.mjs",
+      "provider": "codex",
+      "sha256": "b79723e615f37780a8cacd2c76bb34fa160500557e0a5397a5b7b628ab1722ca",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/scripts/utils.mjs",
+      "provider": "codex",
+      "sha256": "a28b2b3af72be3cc1e7f99c2a3a20eac01e4286ff8c1ea7358354f78dda9edc6",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/SKILL.md",
+      "provider": "codex",
+      "sha256": "df8a073174a9a677a416073a74a9d8537ec95bd8c2a57438a3d6ee95c94eab84",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/templates/evaluate.md",
+      "provider": "codex",
+      "sha256": "f176348678830406911ff62bc4dca9d4fc2e6c8f00c8cb86d24c81ae7da0f082",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/templates/frame.md",
+      "provider": "codex",
+      "sha256": "29e18916d490957421be4ee7f1fee022fb17b19c71b1883172970619bf8afc8f",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/templates/report.md",
+      "provider": "codex",
+      "sha256": "e718f28275f55e54285ab65580c5db3e50c6b9a33e0617136e58dfacab4c67f3",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/templates/research.md",
+      "provider": "codex",
+      "sha256": "f3de610c39e55f2bbfe57733c1acc7382322717933deaf23940d4d79c0f26abd",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/templates/stat.json",
+      "provider": "codex",
+      "sha256": "6cd313b973821ab16034c9c5f8d9b27069a2cbb802ceaff20b470865742826d1",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/templates/stat.schema.json",
+      "provider": "codex",
+      "sha256": "9a1b35ef6ae295b32ba7f309475439f1710ef32d9a9eca2e829b62234444b4e6",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/runtime/planning.md",
+      "provider": "codex",
+      "sha256": "092ce683b3f842e3c82124248a72b3f8bdde481c01b8d180939d54438a03b881",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/runtime/task-tracking.md",
+      "provider": "codex",
+      "sha256": "1969af7d8ba7ddf91bac82c3af440ff57754065a8588e25c296ab4d1c8556811",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/runtime/delegation.md",
+      "provider": "codex",
+      "sha256": "ac26f76079b9f586915860c1f37f7c3c8643c346d68750a884ad45f80ddb1705",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/runtime/interaction.md",
+      "provider": "codex",
+      "sha256": "03a09bc8308f4a370c070b77042f68a6b1ec1d3662f0fcaf24f52752408ee612",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/runtime/context.md",
+      "provider": "codex",
+      "sha256": "066253e5e0dedf232ad842f82b86d6741e52f40c063bd0503ce7249e4667ef69",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/runtime/browser.md",
+      "provider": "codex",
+      "sha256": "d21bb18d08213e9542563c2905b2943d6a54fabef91fd4fc8b0cc07a4e87cfe5",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/runtime/credentials.md",
+      "provider": "codex",
+      "sha256": "d89a348add3d897bdfa92fa2624aaaecb959c0c60c0fcb7311801f8ac2ed949d",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/design/runtime/review.md",
+      "provider": "codex",
+      "sha256": "b46a2ad5b6797d4a86c4e01226518824771551f0548395545bc53d664f17fbc7",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/interfaces/improvement.md",
+      "provider": "codex",
+      "sha256": "58a545bb9753e6f75cae9f4df47564a36ec91c0806255f359e32de524a977769",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/interfaces/reflection.md",
+      "provider": "codex",
+      "sha256": "b7f7eedd75c6751d49e9ce13fefd5e027e04845d3fdce680f7d3cdaeb69c6122",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/interfaces/validation.md",
+      "provider": "codex",
+      "sha256": "85e19416fd333bfa8063dabe3b4959762e1a28cc232367211ddc1c6ba7b90a20",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/patterns/task-tracking.md",
+      "provider": "codex",
+      "sha256": "54cf5e5b4d61d7fe5e1b0deccaccd6863dff2dc4eb232ef54b9b1395658c9af6",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/references/00-router.md",
+      "provider": "codex",
+      "sha256": "9f9e823e23e5b37fdf6271ed8a2927ffb3affe0e153e57d4b4c601dc4f4646ce",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/references/01-reflect.md",
+      "provider": "codex",
+      "sha256": "f31314d83c1def6c8ed7f24a7f3f097c14cfc8e3326e5b72ff4fa8e1ee0484f5",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/references/02-triage.md",
+      "provider": "codex",
+      "sha256": "ba58bc90e29380ae83c10070bbefebe7229c8ac5b3d4f78db375a3100b59e6c1",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/references/03-draft.md",
+      "provider": "codex",
+      "sha256": "68ba148962ff8e7ab7f65e8f301765e9df6627542e9e0c5ed3ff1c0a70ea1551",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/references/04-validate.md",
+      "provider": "codex",
+      "sha256": "345793a32dc61a2b2926fca75b804ee4fb133d3bfa66a55ff2621499f9da4539",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/references/05-adopt.md",
+      "provider": "codex",
+      "sha256": "7e9791e5e11d149f2ae2ce77215a9d8160ed4c2eaff3bc7e1b92ae5f30bbdd42",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/SKILL.md",
+      "provider": "codex",
+      "sha256": "a78bd3469197586d8d1fe19b026ddecefd901809b181bfee6f6fc398135ed7c5",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/runtime/planning.md",
+      "provider": "codex",
+      "sha256": "092ce683b3f842e3c82124248a72b3f8bdde481c01b8d180939d54438a03b881",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/runtime/task-tracking.md",
+      "provider": "codex",
+      "sha256": "1969af7d8ba7ddf91bac82c3af440ff57754065a8588e25c296ab4d1c8556811",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/runtime/delegation.md",
+      "provider": "codex",
+      "sha256": "ac26f76079b9f586915860c1f37f7c3c8643c346d68750a884ad45f80ddb1705",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/runtime/interaction.md",
+      "provider": "codex",
+      "sha256": "03a09bc8308f4a370c070b77042f68a6b1ec1d3662f0fcaf24f52752408ee612",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/runtime/context.md",
+      "provider": "codex",
+      "sha256": "066253e5e0dedf232ad842f82b86d6741e52f40c063bd0503ce7249e4667ef69",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/runtime/browser.md",
+      "provider": "codex",
+      "sha256": "d21bb18d08213e9542563c2905b2943d6a54fabef91fd4fc8b0cc07a4e87cfe5",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/runtime/credentials.md",
+      "provider": "codex",
+      "sha256": "d89a348add3d897bdfa92fa2624aaaecb959c0c60c0fcb7311801f8ac2ed949d",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".agents/skills/evolve/runtime/review.md",
+      "provider": "codex",
+      "sha256": "b46a2ad5b6797d4a86c4e01226518824771551f0548395545bc53d664f17fbc7",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".codex/agents/architect.toml",
+      "provider": "codex",
+      "sha256": "6959a65d4a145c684532dcb0dafd1d32606767e7103cde0e089d12c00c0a7976",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".codex/agents/docs-writer.toml",
+      "provider": "codex",
+      "sha256": "688ea93c547767a780bb4b2f04278cfc5c7c67ffd110352d9a417a7859fe98ea",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".codex/agents/onboarding.toml",
+      "provider": "codex",
+      "sha256": "e1308f90af22f9bc0af73e7ba7f46c527861ff2e6094ee3477e83b0b8887e4bd",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".codex/agents/web.toml",
+      "provider": "codex",
+      "sha256": "fc583eeedf9a6dc5713f4df2f4491d8c72d788feb21f4d579a3a7f7d33cb03d3",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".codex/agents/registrations.toml",
+      "provider": "codex",
+      "sha256": "5ac098ae1ddfc82a46c6c9074dfed3804a7f7f3fbfb950279431299ea675424d",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".codex/agents/schedule.toml",
+      "provider": "codex",
+      "sha256": "3e7c166bd90f910af02fb7baf94ab62c1c46ba8a459ee41433218f432c6c541a",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".codex/agents/database.toml",
+      "provider": "codex",
+      "sha256": "a6daaf97dd1d020ac6fa34b17d1dc1bd3c45e6da16bc0e0220f076a29fe2018f",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".codex/harness-runtime/delegation.md",
+      "provider": "codex",
+      "sha256": "ac26f76079b9f586915860c1f37f7c3c8643c346d68750a884ad45f80ddb1705",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".codex/harness-runtime/credentials.md",
+      "provider": "codex",
+      "sha256": "d89a348add3d897bdfa92fa2624aaaecb959c0c60c0fcb7311801f8ac2ed949d",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": ".codex/config.toml",
+      "provider": "codex",
+      "sha256": "b3371974a0b4cb58f868bab4ba185d744f5c126c017d067cd32a413f0642d1df",
+      "status": "verified",
+      "evidence": "Checked installed Codex syntax, selected route or provider mapping and final SHA-256.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "AGENTS.md",
+      "provider": "codex",
+      "sha256": "d954cec2d1e24ed5d61cf346cc469f379123d28e5e280122d3992e3f18ac1892",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Engineering Guide/03 Engineer Role.md",
+      "provider": "shared",
+      "sha256": "397d3db283b1dff4533452a2b3cd3528150c576ec0acc57098c8ec28375800fd",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Engineering Guide/Documentation/01 Principles.md",
+      "provider": "shared",
+      "sha256": "9b664d9e07ab812926a245ee6d99a5c7b846b6f2c177efd34316a7b3945571ce",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Engineering Guide/Documentation/02 Structure.md",
+      "provider": "shared",
+      "sha256": "90264f428e4e11ddac2d4762dad42b4ad045ffc9b433cd51ef296b4c39fdddf1",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Engineering Guide/Documentation/03 HLD Intent.md",
+      "provider": "shared",
+      "sha256": "6c026d599f0897d8333b5ae13adec6d4566d7636902da985df4f28e0b82ae0a5",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Engineering Guide/Documentation/04 LLD Intent.md",
+      "provider": "shared",
+      "sha256": "3a1b02f68315521c4bcb4fb5e820995550668a8ee8eb3fcf4d9dca454c5263d0",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Engineering Guide/Lifecycles/01 Dev Lifecycle.md",
+      "provider": "shared",
+      "sha256": "42dc9a45dd77726e9dfa6590a588a328e0a2ab8db352082cf61eb7f7eeb44afd",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Engineering Guide/Lifecycles/03 Evolve Lifecycle.md",
+      "provider": "shared",
+      "sha256": "d3134ebdd73b9345321af035112e9f3ecfb3fae4eef983fde798f7a1cc2e4a8f",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Engineering Guide/01 Conventions.md",
+      "provider": "shared",
+      "sha256": "a07d374c33f22063610b4bf4d0d2fb349d3ab79bbfd1839fe43bd384881d1b17",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Engineering Guide/04 AI Coding Tool Compatibility.md",
+      "provider": "shared",
+      "sha256": "3142509b31946f9a9af1f570ad5c374253b2d41da33e012f6c14ae2415cffd0c",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Engineering Guide/Documentation/07 Terminology.md",
+      "provider": "shared",
+      "sha256": "22d08b5df2d1bdda6b1113bde5f3f37ed803c21157d7f7a0eca39de18d66baf7",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Engineering Guide/Lifecycles/00 Overview.md",
+      "provider": "shared",
+      "sha256": "75d443bd78d2c1a6c2dd092c748ae5f91adc8fbc4c5601c3df647ac552830b64",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Engineering Guide/Lifecycles/02 Design Lifecycle.md",
+      "provider": "shared",
+      "sha256": "c6b4213e32e935bf87f1cca684182c8f31a19efcb539e5b862a8d74a005eee62",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Engineering Guide/Lifecycles/05 Documents Flow.md",
+      "provider": "shared",
+      "sha256": "7383598c654c80ec2dcb3749bc9ba45e981b0a986b29a94218be039334f6398a",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/System Architecture (LLD)/Web/Tournament Workspace.md",
+      "provider": "shared",
+      "sha256": "8509a1ea153a52ae0d878d6551e8c0a098bbba7ca55e21c839fc0b97f489f505",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/System Architecture (LLD)/API/Tournament Registrations.md",
+      "provider": "shared",
+      "sha256": "97df0e9d79ae87123d57b403feec7f4134ae2ea93aa9c7dc7403aaaa11a28b67",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/System Architecture (LLD)/API/Manual Scheduling.md",
+      "provider": "shared",
+      "sha256": "1e72560b83ca03dca350ba0973b1b6999ef9dd953fd9cf74b10100fd60609155",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/System Architecture (LLD)/PostgreSQL/Tournament Store.md",
+      "provider": "shared",
+      "sha256": "37f037756338a78278332b2975f18646ce8e42ddbd4771915a4428b8cdb4b2c2",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/System Architecture (LLD)/Web/00 Overview.md",
+      "provider": "shared",
+      "sha256": "4ecff26c89ed1320e5c8b68c44bd26d358eb7c4d143ad08e719c082665ba974d",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/System Architecture (LLD)/API/00 Overview.md",
+      "provider": "shared",
+      "sha256": "dd6c071f462439694d1fce6ed30e39951be27c2556d01198f6f74785d214d9af",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/System Architecture (LLD)/PostgreSQL/00 Overview.md",
+      "provider": "shared",
+      "sha256": "07ad89e24bcb5a1383627e2b04239b8658adcd3cce130e777666bccd2f2441ef",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/System Architecture (LLD)/Web/UI UX Patterns.md",
+      "provider": "shared",
+      "sha256": "3267d3afcdbeeecc49570a60f13d5d0ec7a46b647ac8cbfb65f2bed4a9eae92d",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/System Architecture (LLD)/API/Principles and Patterns.md",
+      "provider": "shared",
+      "sha256": "efcac06620bac06b9844278ec85a6f0a464392b9d852ff56d436cc467bfbe621",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/System Architecture (LLD)/PostgreSQL/Principles and Patterns.md",
+      "provider": "shared",
+      "sha256": "3f23f597a3370360aa137340840cd0c8104fd9a2ead1f08c54e793b0336a3789",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Target Architecture (HLD)/v1/Containers/Web.md",
+      "provider": "shared",
+      "sha256": "1f3add7fb1233826bd09e4da4b9c867a6c5c9a5fc2323113c780bc9dbd7361ef",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Target Architecture (HLD)/v1/Containers/API.md",
+      "provider": "shared",
+      "sha256": "3169486ae7585ce7fea8bfd9605c70e3b60d086ee4d0092d028b8383e18b172d",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Target Architecture (HLD)/v1/Containers/PostgreSQL.md",
+      "provider": "shared",
+      "sha256": "a2dcd46abb32fd379ffb6e06d57363a2a640d9467c217fc5e89ea03d24377367",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Target Architecture (HLD)/v1/System Overview.md",
+      "provider": "shared",
+      "sha256": "f6d141d81d9322eca5a7164e4168179f8d4eed45761b26811e868af526bcb6f5",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Target Architecture (HLD)/v1/System Sizing.md",
+      "provider": "shared",
+      "sha256": "96f90f03c860127be220b912eb8158ea9c85a34c102601534936fc03731cdf51",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Engineering Guide/index.md",
+      "provider": "shared",
+      "sha256": "4b86e2b34c2e189e8d96862b2889b070f3c79a277a23256a2ab9f635676180a5",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Engineering Guide/Documentation/index.md",
+      "provider": "shared",
+      "sha256": "a150ada85242578845bf33ac6256984307e3fe1631f0e2b94c3705ffde9987b8",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Engineering Guide/Lifecycles/index.md",
+      "provider": "shared",
+      "sha256": "00393bb89930a7bf5c5bbd1aa4769e1eef2afff52ffaefe34a795988519283e3",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/System Architecture (LLD)/index.md",
+      "provider": "shared",
+      "sha256": "e3b94c8007180f3bf8f63509ac95f829eece784b760827919dd542966a2c70c1",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/System Architecture (LLD)/Web/index.md",
+      "provider": "shared",
+      "sha256": "3eb9f9b1fbf83928b3bb9d5d396eb502b1974a4913aefae9e2a670f73097fb50",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/System Architecture (LLD)/API/index.md",
+      "provider": "shared",
+      "sha256": "b1acb02f0fd70eec660848b814c36151d336191553e0e38c80dcc9887cf6e5c3",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/System Architecture (LLD)/PostgreSQL/index.md",
+      "provider": "shared",
+      "sha256": "1e01c641b753d7f6fc4ece686caebe34ee686c98a23690d06031c4614865805b",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Target Architecture (HLD)/index.md",
+      "provider": "shared",
+      "sha256": "2ce075a07db0ef631cd96eeb2acbd06f845ae16783f7e8688f0e1ebc88b900bd",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Target Architecture (HLD)/v1/index.md",
+      "provider": "shared",
+      "sha256": "ff61423eaa527805fc8d194311636b46b0f71d09597dce529e334eef896269e4",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Target Architecture (HLD)/v1/Containers/index.md",
+      "provider": "shared",
+      "sha256": "9268b1fe17468eb3aab8aad873b8cf36e87ff62c5a998721b2f2d105b28da4e9",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Stories/index.md",
+      "provider": "shared",
+      "sha256": "191293934f21d7cc6a5a791c630b119fcb389e9b0a914728526f05311c8cdfd2",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/README.md",
+      "provider": "shared",
+      "sha256": "62941d5aca12fe556325468b2b0bc204182c4ef5a5fa6120e32a994e0a0a9338",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/Target Architecture (HLD)/README.md",
+      "provider": "shared",
+      "sha256": "bf968b3e94fb8da102158c1b9144465f891b3c2909a1e7bfe35e225539379d86",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/System Architecture (LLD)/README.md",
+      "provider": "shared",
+      "sha256": "35319c075837c4fc05f9e015086bf377badb9bebd52e21b35e676dda59f75a19",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "README.md",
+      "provider": "shared",
+      "sha256": "1c223a16f1df1fb9be4b391b6d7cf2e413d3a7df02a4b5061e35843620327e43",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "backend/README.md",
+      "provider": "shared",
+      "sha256": "ae52c7029e6cf05156170846a15ba7f3aae2515db2dd7e4423a346987bcfc2c0",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "frontend/README.md",
+      "provider": "shared",
+      "sha256": "56dd8eaa5ff30b8e341de8a65c9e1c508237b5f909ccce3aec4521fb7dd78784",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/.og/og.config.json",
+      "provider": "shared",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/.og/cli.mjs",
+      "provider": "shared",
+      "sha256": "6dd745d1b84c076a0b539c51047a513f2cf10adb44fd5703ac97e7f2ec1b6b30",
+      "status": "verified",
+      "evidence": "Verified graph runtime against package bytes, graph migration, build and conformance check.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/.og/constants.mjs",
+      "provider": "shared",
+      "sha256": "32e9a30cb34ae3bbb27ca86610205d5bf9471272af7c0fab734c3e6dd27ff37b",
+      "status": "verified",
+      "evidence": "Verified graph runtime against package bytes, graph migration, build and conformance check.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/.og/schema.mjs",
+      "provider": "shared",
+      "sha256": "0fa389296d06030e72c8e05952118299a628c7410e43d238697bddffd79752b7",
+      "status": "verified",
+      "evidence": "Verified graph runtime against package bytes, graph migration, build and conformance check.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/.og/utils.mjs",
+      "provider": "shared",
+      "sha256": "72cdfb0d23facec8e14054055d1486b1fde9a0aee8d9a47702abdc3193380ef4",
+      "status": "verified",
+      "evidence": "Verified graph runtime against package bytes, graph migration, build and conformance check.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/.og/docs.mjs",
+      "provider": "shared",
+      "sha256": "f47f68c2cfff537daafcfb2903f9c3b4dc1f8e455bdec0b58432f537b019bd7c",
+      "status": "verified",
+      "evidence": "Verified graph runtime against package bytes, graph migration, build and conformance check.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/.og/edges.mjs",
+      "provider": "shared",
+      "sha256": "59f8838d725c3a5e74938370224590b71c3202b4b456605ba3fdf05990db69dd",
+      "status": "verified",
+      "evidence": "Verified graph runtime against package bytes, graph migration, build and conformance check.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/.og/docs-operational-graph.sqlite",
+      "provider": "shared",
+      "sha256": "7ab58a5a67593a9f732ae6274979ed41c209aeec9d63d75bc43793846b251938",
+      "status": "verified",
+      "evidence": "Verified graph runtime against package bytes, graph migration, build and conformance check.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/.og/.gitignore",
+      "provider": "shared",
+      "sha256": "4ce3f82f21a56e80622bacfac01e8863c35982174f9e583e9954101eb05d1da4",
+      "status": "verified",
+      "evidence": "Verified graph runtime against package bytes, graph migration, build and conformance check.",
+      "runtime_tokens": []
+    },
+    {
+      "target": "docs/.og/graph.mmd",
+      "provider": "shared",
+      "sha256": "ae393302cba102685ab556bbb1fecae38e63576e88e7c61cf789d18d24fee734",
+      "status": "verified",
+      "evidence": "Reviewed project-specific derivation against code evidence and navigation or verified the generated graph output.",
+      "runtime_tokens": []
+    }
+  ],
+  "checks": [
+    {
+      "status": "passed",
+      "evidence": "All 7 Java unit/integration tests, React production build, Compose configuration and installed lifecycle companion tests passed."
+    },
+    {
+      "status": "passed",
+      "evidence": "Orchestrator verified final documentation corrections; independent architect returned GO after source recheck. OG changes add only documentation IDs."
+    },
+    {
+      "status": "passed",
+      "evidence": "Mermaid CLI 11.4.0: 21 diagrams rendered and visually reviewed."
+    },
+    {
+      "status": "passed",
+      "evidence": "Operational graph indexed 31 documents and 61 authored references without migration or OKF issues."
+    },
+    {
+      "status": "passed",
+      "evidence": "Local links, output paths, hashes, TOML, provider scopes and tokens verified."
+    }
+  ],
+  "plan_sha256": "20489ab44aedd53ba4c3324127cb5137dc8ad172373e6a0355793e41385b03a7",
+  "baseline": "state/index.json",
+  "decisions": [
+    "Codex only",
+    "Local stories and no MCP",
+    "No formal NFR framework"
+  ],
+  "completed_at": "2026-11-27T07:19:05.179864+00:00",
+  "finalization": ".harness/state/launch/runs/20261126T153639Z-launch/verification.json",
+  "recommendation": "chore: launch ArtiSyn harness for Codex"
+}

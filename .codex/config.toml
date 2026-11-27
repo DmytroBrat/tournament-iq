@@ -1,0 +1,9 @@
+"sandbox_mode" = "workspace-write"
+"approval_policy" = "on-request"
+
+["tools"]
+
+["tools"."update_plan"]
+"enabled" = true
+
+["mcp_servers"]

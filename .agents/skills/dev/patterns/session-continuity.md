@@ -1,0 +1,16 @@
+# Pattern: Session Continuity
+
+Fresh vs. resume is decided once, by the entry check in
+`.agents/skills/dev/SKILL.md`. This pattern only covers losing context
+mid-stage (compaction, a new session picking up an active stage).
+
+When that happens:
+
+1. Re-read the current stage reference in full. Its per-step protocol still applies
+   even if `dev/SKILL.md` is no longer in context.
+2. Run metrics `recover --dir "$IMPL_DIR"` before recording anything new.
+3. Read `2-report.md` to see what is already done. Do not redo completed steps, do
+   not re-ask a sign-off that was already given, and keep existing authorisation.
+
+On exit, for a full-flow request re-read `.agents/skills/dev/SKILL.md` and
+continue from the next stage. For direct-stage entry, return the result and stop.
