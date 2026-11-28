@@ -4,7 +4,7 @@ title: TQ-001 Constraint-Based Round-Robin Schedule Generation
 description: Tracks the project design for deterministic round-robin fixture generation and constrained schedule placement.
 tags: [design, scheduling, round-robin, constraints]
 generated: { by: process:design-context, at: 2026-11-27T12:10:59Z }
-updated: { by: process:design-evaluate, at: 2026-11-27T18:41:00Z }
+updated: { by: process:design-solution, at: 2026-11-28T02:36:00Z }
 ---
 
 # Design Report — TQ-001: Constraint-Based Round-Robin Schedule Generation
@@ -16,10 +16,16 @@ TQ-001 is a local project ticket with no external tracker integration. It define
 ## State
 
 ```yaml
-current_stage: solution
-completed_stages: [context-gathering, ceremony, frame, research, evaluate]
-selected_artifacts: []
-next_action: 'Commit the approved Evaluate artifacts, then produce the integrated Solution design'
+current_stage: review-gate
+completed_stages: [context-gathering, ceremony, frame, research, evaluate, solution]
+selected_artifacts:
+  - '../solution/Architecture.md'
+  - '../solution/Design - Fixture and Placement Strategy.md'
+  - '../solution/Design - Validation and Failure Model.md'
+  - '../solution/Design - Preview and Persistence Protocol.md'
+  - '../solution/Stack.md'
+  - '../solution/Efforts.md'
+next_action: 'Commit the approved Solution artifacts, then open the Review Gate'
 context_fingerprint: ''
 ```
 
@@ -58,7 +64,7 @@ context_fingerprint: ''
 | Ticket | TQ-001 |
 | Branch | `docs/tq-001-constraint-round-robin-scheduling` |
 | Status | 🔄 In Progress |
-| Phase | 🎯 Context Gathering ✅ · 🚀 Ceremony ✅ · 📋 Frame ✅ · 🔍 Research ✅ · 🏗 Evaluate ✅ · 📦 Solution 🔄 · 🔎 Review ⏳ · 💬 Address Feedback ⏳ · 📤 Publish ⏳ · 🏁 Completion ⏳ |
+| Phase | 🎯 Context Gathering ✅ · 🚀 Ceremony ✅ · 📋 Frame ✅ · 🔍 Research ✅ · 🏗 Evaluate ✅ · 📦 Solution ✅ · 🔎 Review 🔄 · 💬 Address Feedback ⏳ · 📤 Publish ⏳ · 🏁 Completion ⏳ |
 
 ---
 
@@ -67,7 +73,7 @@ context_fingerprint: ''
 <!-- design-metrics:start -->
 Source: [stat.json](stat.json). **Elapsed** = wall-clock time from the stage's first start to its completion (includes any wait). **Work** = summed observed work intervals (active effort) within that span. **Wait** = summed observed wait intervals (blocked on developer input, approval, or an external dependency) within that span. Work + Wait can read less than Elapsed when time went unclassified, or more after a retry reopened the stage. Durations are shown as `Xh Ym Zs`, rounded to the nearest second; open intervals are excluded from Elapsed/Work/Wait. Token subtotals have unavailable coverage; ticket usage is not allocated to individual units.
 
-Observed work: 34m 59s · Wait to date: 5h 42m 38s (closed 5h 42m 38s + current 0s) · Unclassified: 1m 42s
+Observed work: 12h 22m 17s · Wait to date: 5h 47m 42s (closed 5h 47m 42s + current 0s) · Unclassified: 2m 4s
 
 | Stage | Started (UTC) | Completed (UTC) | Elapsed | Work | Wait | Input tokens | Output tokens | Coverage | Attempts | Failed checks |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -75,8 +81,8 @@ Observed work: 34m 59s · Wait to date: 5h 42m 38s (closed 5h 42m 38s + current 
 | ceremony (completed) | 2026-11-27T12:24:07.747Z | 2026-11-27T12:37:25.696Z | 13m 18s | 1m 20s | 11m 58s | unavailable | unavailable | from_tracking_start | 1 | 0 |
 | frame (completed) | 2026-11-27T12:37:49.458Z | 2026-11-27T18:09:35.927Z | 5h 31m 46s | 5m 48s | 5h 25m 58s | unavailable | unavailable | from_tracking_start | 1 | 0 |
 | research (completed) | 2026-11-27T18:10:07.589Z | 2026-11-27T18:33:17.087Z | 23m 9s | 21m 36s | 1m 34s | unavailable | unavailable | from_tracking_start | 1 | 0 |
-| evaluate (waiting) | 2026-11-27T18:33:27.399Z | unavailable | unavailable | 5m 12s | 1m 11s | unavailable | unavailable | from_tracking_start | 1 | 0 |
-| solution (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
+| evaluate (completed) | 2026-11-27T18:33:27.399Z | 2026-11-27T18:40:46.642Z | 7m 19s | 5m 12s | 2m 7s | unavailable | unavailable | from_tracking_start | 1 | 0 |
+| solution (waiting) | 2026-11-27T18:41:08.384Z | unavailable | unavailable | 11h 47m 18s | 4m 8s | unavailable | unavailable | from_tracking_start | 1 | 0 |
 | review-gate (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
 | address-feedback (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
 | publish (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
@@ -114,6 +120,55 @@ _From Research OQ triage (2026-11-27)._
 
 ---
 
+## Solution Artifact Selection and Concern Scan
+
+The selected artifact set owns every material Solution concern without adding a new runtime boundary.
+
+| Interface | Selection | Evidence and scope |
+| --- | --- | --- |
+| Architecture | Selected | The new Web-to-API preview/save flow and API-to-PostgreSQL transaction change cross existing container boundaries. |
+| Design | Selected | Fixture placement, independent validation, REST contracts and persistence coordination require component-level detail. The three confirmed decisions remain split into separate files. |
+| Stack | Selected | The solution confirms pure Java domain logic and existing Spring Data JPA/PostgreSQL locking without adding a solver or service. |
+| Efforts | Selected | Implementation spans Web, API, PostgreSQL integration tests and a prerequisite bounded-search calibration spike. |
+| Focused data model or migration | Omitted | Tournament-row locking uses the existing tournament and match schema; the selected P1 protocol adds no table, column or migration. |
+| Threat model or security artifact | Omitted | Authentication and external integrations are excluded, and the solution does not change a trust boundary or secret flow. |
+| Deployment artifact | Omitted | The existing Web, API and PostgreSQL topology remains unchanged. |
+
+| Concern | Classification | Resolution and evidence |
+| --- | --- | --- |
+| Boundaries and ownership | Material | Architecture and Design own the additive Web-to-API preview/save contracts; the API retains domain and transaction ownership. |
+| User and business behavior | Material | Architecture and Design define preview followed by explicit save while preserving the manual match-schedule flow. |
+| Data and state | Material | Architecture and persistence Design define stateless preview and one atomic batch match insert with no schema change. |
+| Interfaces and compatibility | Material | Design defines additive REST endpoints, structured Problem Details and unchanged manual endpoint semantics. |
+| Security and privacy | Not applicable | The accepted Frame excludes authentication and external integrations; no personal data, credential or trust-boundary change is introduced. |
+| Reliability and recovery | Material | Architecture and Design own independent validation, transaction rollback and `409 Conflict` handling for stale or concurrent saves. |
+| Performance and capacity | Material | Efforts owns a prerequisite spike that sets finite-domain caps, deterministic search budget and benchmark acceptance before generator implementation. |
+| Operations and delivery | Informational | Stack and Efforts retain the existing Docker Compose runtime and add no runtime component. |
+| Cost and licensing | Informational | The selected solution adds no paid service, solver dependency or new license obligation. |
+| Compliance and policy | Not applicable | The local demo adds no regulated data, residency, retention or external policy requirement. |
+| Evolution and migration | Material | Architecture and Design keep generated scheduling additive and compatible with the existing manual match-schedule path. |
+
+Every material concern is assigned to a selected artifact or confirmed design decision.
+
+---
+
+## Solution Quality Gate
+
+**2026-11-28 verdict: PASS.** No material findings remain.
+
+| Check | Evidence |
+| --- | --- |
+| Selected artifacts | All six State-listed artifacts exist. |
+| Requirement coverage | EC1–EC20 and PEC1/PEC4 map to the Architecture decision register and the three decision-specific Design files. |
+| Concern ownership | Every material preliminary concern has a selected artifact or confirmed decision. |
+| Certainty | Solution artifacts contain no TODO, TBD, placeholder, open-question or unresolved sections. Empty `Efforts.md` estimates are intentionally developer-owned. |
+| Decision consistency | `Architecture.md` is canonical; Design, Stack and Efforts add no conflicting material decision. |
+| Architect review | Pass 1 found nonempty-preview rejection and wall-clock safety classification omissions. Both were corrected; pass 2 returned `OK`. |
+| Diagrams | Mermaid CLI is unavailable. Syntax-oriented inspection covered 10 fenced Mermaid blocks, diagram types and color declarations with no issue. |
+| Links and formatting | Every local Markdown link resolves and `git diff --check` passes. |
+
+---
+
 ## Gate
 
 - Approver: —
@@ -132,6 +187,7 @@ _From Research OQ triage (2026-11-27)._
 | 2026-11-27 | Frame | 20 known requirements and 2 proposed requirements accepted; three independent decision tracks confirmed. |
 | 2026-11-27 | Research | `@architect` returned 11 options across Fixture and Placement Strategy (earliest-fit greedy, deterministic CSP backtracking, embedded CP-SAT), Validation and Failure Model (generator-coupled checks, independent pure whole-schedule validator, PostgreSQL constraint-led validation, independent constraint-model replay), and Preview and Persistence Protocol (tournament row lock, optimistic schedule revision, server-stored preview, serializable save); developer confirmed the set complete. |
 | 2026-11-27 | Evaluate | Recommended deterministic CSP backtracking, independent pure whole-schedule validation, and stateless preview with a tournament row lock. |
+| 2026-11-28 | Solution | Selected Architecture, three decision-specific Designs, Stack and Efforts written; independent architect review OK; quality gate PASS; developer estimates total 10d. |
 
 ---
 
