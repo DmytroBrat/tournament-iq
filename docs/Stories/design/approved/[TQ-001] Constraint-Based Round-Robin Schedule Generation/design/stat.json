@@ -1,0 +1,901 @@
+{
+  "schema_version": 2,
+  "lifecycle": "design",
+  "design_revision": 1,
+  "ticket": "TQ-001",
+  "tracking_started_at": "2026-11-27T12:20:32.373Z",
+  "ticket_created_at": null,
+  "ticket_created_source": null,
+  "started_at": "2026-11-27T12:20:36.323Z",
+  "completed_at": "2026-11-28T08:15:46.135Z",
+  "coverage": "from_tracking_start",
+  "stages": [
+    {
+      "id": "context-gathering",
+      "status": "completed",
+      "attempts": [
+        {
+          "id": "b0c2ad33-1132-439d-aaf3-528f8ab354f9",
+          "started_at": "2026-11-27T12:20:36.323Z",
+          "ended_at": "2026-11-27T12:23:35.617Z",
+          "trigger": "initial",
+          "outcome": "completed"
+        }
+      ]
+    },
+    {
+      "id": "ceremony",
+      "status": "completed",
+      "attempts": [
+        {
+          "id": "8d8bb636-2ef3-4698-9549-7f7c381b4f38",
+          "started_at": "2026-11-27T12:24:07.747Z",
+          "ended_at": "2026-11-27T12:37:25.696Z",
+          "trigger": "initial",
+          "outcome": "completed"
+        }
+      ]
+    },
+    {
+      "id": "frame",
+      "status": "completed",
+      "attempts": [
+        {
+          "id": "d526deff-0d61-47fb-84a5-7378b379471e",
+          "started_at": "2026-11-27T12:37:49.458Z",
+          "ended_at": "2026-11-27T18:09:35.927Z",
+          "trigger": "initial",
+          "outcome": "completed"
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "status": "completed",
+      "attempts": [
+        {
+          "id": "a7940a7a-c683-4c80-8009-8e131868dd62",
+          "started_at": "2026-11-27T18:10:07.589Z",
+          "ended_at": "2026-11-27T18:33:17.087Z",
+          "trigger": "initial",
+          "outcome": "completed"
+        }
+      ]
+    },
+    {
+      "id": "evaluate",
+      "status": "completed",
+      "attempts": [
+        {
+          "id": "8f27269c-bc55-4fd3-9fbc-a166b1f9ddee",
+          "started_at": "2026-11-27T18:33:27.399Z",
+          "ended_at": "2026-11-27T18:40:46.642Z",
+          "trigger": "initial",
+          "outcome": "completed"
+        }
+      ]
+    },
+    {
+      "id": "solution",
+      "status": "completed",
+      "attempts": [
+        {
+          "id": "59fa2ec7-b51d-497c-af66-4a680f84859a",
+          "started_at": "2026-11-27T18:41:08.384Z",
+          "ended_at": "2026-11-28T06:33:22.578Z",
+          "trigger": "initial",
+          "outcome": "completed"
+        }
+      ]
+    },
+    {
+      "id": "review-gate",
+      "status": "completed",
+      "attempts": [
+        {
+          "id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+          "started_at": "2026-11-28T06:33:34.897Z",
+          "ended_at": "2026-11-28T06:43:03.187Z",
+          "trigger": "initial",
+          "outcome": "completed"
+        },
+        {
+          "id": "83f38694-b4c9-4550-87ea-8c3ef7a811c3",
+          "started_at": "2026-11-28T06:43:33.124Z",
+          "ended_at": "2026-11-28T06:43:33.249Z",
+          "trigger": "reopened",
+          "outcome": "completed"
+        }
+      ]
+    },
+    {
+      "id": "address-feedback",
+      "status": "skipped",
+      "attempts": [],
+      "skip_reason": "no_concerns",
+      "evidence_ref": "Developer confirmed PR #1 approved with no concerns on 2026-11-28",
+      "skipped_at": "2026-11-28T06:43:33.316Z"
+    },
+    {
+      "id": "publish",
+      "status": "completed",
+      "attempts": [
+        {
+          "id": "1764eb27-a76d-4d5f-8063-a451484d0b9b",
+          "started_at": "2026-11-28T06:47:51.739Z",
+          "ended_at": "2026-11-28T08:02:40.003Z",
+          "trigger": "initial",
+          "outcome": "completed"
+        }
+      ]
+    },
+    {
+      "id": "completion",
+      "status": "completed",
+      "attempts": [
+        {
+          "id": "699e5ec9-fff2-4e19-a842-6ace31bdd430",
+          "started_at": "2026-11-28T08:02:49.776Z",
+          "ended_at": "2026-11-28T08:15:46.073Z",
+          "trigger": "initial",
+          "outcome": "completed"
+        }
+      ]
+    }
+  ],
+  "steps": [],
+  "intervals": [
+    {
+      "id": "5ab61f9c-e594-42e4-97b5-d3bb3d9368af",
+      "stage_id": "context-gathering",
+      "stage_attempt_id": "b0c2ad33-1132-439d-aaf3-528f8ab354f9",
+      "step": null,
+      "kind": "work",
+      "activity": "investigation",
+      "started_at": "2026-11-27T12:20:36.323Z",
+      "ended_at": "2026-11-27T12:20:56.729Z",
+      "last_observed_at": "2026-11-27T12:20:56.729Z"
+    },
+    {
+      "id": "a4e0c0b8-07a2-493b-89c8-175a29567697",
+      "stage_id": "context-gathering",
+      "stage_attempt_id": "b0c2ad33-1132-439d-aaf3-528f8ab354f9",
+      "step": null,
+      "kind": "wait",
+      "reason": "approval",
+      "detail": "Awaiting context-gathering sign-off",
+      "started_at": "2026-11-27T12:20:56.729Z",
+      "ended_at": "2026-11-27T12:22:53.960Z",
+      "last_observed_at": "2026-11-27T12:22:53.960Z"
+    },
+    {
+      "id": "98c11116-6ef7-4beb-b59c-31ed8ed97b14",
+      "stage_id": "context-gathering",
+      "stage_attempt_id": "b0c2ad33-1132-439d-aaf3-528f8ab354f9",
+      "step": null,
+      "kind": "work",
+      "activity": "investigation",
+      "started_at": "2026-11-27T12:22:53.960Z",
+      "ended_at": "2026-11-27T12:23:35.617Z",
+      "last_observed_at": "2026-11-27T12:23:35.617Z"
+    },
+    {
+      "id": "2cdeee17-9868-4b7d-8fc5-565cdf9637ec",
+      "stage_id": "ceremony",
+      "stage_attempt_id": "8d8bb636-2ef3-4698-9549-7f7c381b4f38",
+      "step": null,
+      "kind": "work",
+      "activity": "planning",
+      "started_at": "2026-11-27T12:24:07.747Z",
+      "ended_at": "2026-11-27T12:24:28.229Z",
+      "last_observed_at": "2026-11-27T12:24:28.229Z"
+    },
+    {
+      "id": "120347c6-7e7c-443e-9088-5ff40e1a57c4",
+      "stage_id": "ceremony",
+      "stage_attempt_id": "8d8bb636-2ef3-4698-9549-7f7c381b4f38",
+      "step": null,
+      "kind": "wait",
+      "reason": "approval",
+      "detail": "Awaiting ceremony branch checkout sign-off",
+      "started_at": "2026-11-27T12:24:28.229Z",
+      "ended_at": "2026-11-27T12:34:28.081Z",
+      "last_observed_at": "2026-11-27T12:34:28.081Z"
+    },
+    {
+      "id": "8917efdb-8d69-477d-bebe-832212b989f4",
+      "stage_id": "ceremony",
+      "stage_attempt_id": "8d8bb636-2ef3-4698-9549-7f7c381b4f38",
+      "step": null,
+      "kind": "work",
+      "activity": "planning",
+      "started_at": "2026-11-27T12:34:28.081Z",
+      "ended_at": "2026-11-27T12:35:23.272Z",
+      "last_observed_at": "2026-11-27T12:35:23.272Z"
+    },
+    {
+      "id": "e98f2b10-781a-4ecb-bf56-66d50e577194",
+      "stage_id": "ceremony",
+      "stage_attempt_id": "8d8bb636-2ef3-4698-9549-7f7c381b4f38",
+      "step": null,
+      "kind": "wait",
+      "reason": "user_input",
+      "detail": "Awaiting Ceremony commit confirmation",
+      "started_at": "2026-11-27T12:35:23.272Z",
+      "ended_at": "2026-11-27T12:37:21.183Z",
+      "last_observed_at": "2026-11-27T12:37:21.183Z"
+    },
+    {
+      "id": "3e69009b-5a0a-4e49-be3e-270fa638f2b3",
+      "stage_id": "ceremony",
+      "stage_attempt_id": "8d8bb636-2ef3-4698-9549-7f7c381b4f38",
+      "step": null,
+      "kind": "work",
+      "activity": "planning",
+      "started_at": "2026-11-27T12:37:21.183Z",
+      "ended_at": "2026-11-27T12:37:25.696Z",
+      "last_observed_at": "2026-11-27T12:37:25.696Z"
+    },
+    {
+      "id": "50b9a0e2-7061-4a55-8c69-0f7b2e4e48d8",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "kind": "work",
+      "activity": "planning",
+      "started_at": "2026-11-27T12:37:49.458Z",
+      "ended_at": "2026-11-27T12:41:11.733Z",
+      "last_observed_at": "2026-11-27T12:41:11.733Z"
+    },
+    {
+      "id": "d4e53921-6ff4-4518-bdf0-55fffa08a9ea",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "kind": "wait",
+      "reason": "approval",
+      "detail": "Awaiting decisions sign-off",
+      "started_at": "2026-11-27T12:41:11.733Z",
+      "ended_at": "2026-11-27T12:42:55.543Z",
+      "last_observed_at": "2026-11-27T12:42:55.543Z"
+    },
+    {
+      "id": "e09ecf7b-a16e-42e9-83ba-b5ab4fee15f3",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "kind": "work",
+      "activity": "planning",
+      "started_at": "2026-11-27T12:42:55.543Z",
+      "ended_at": "2026-11-27T12:43:10.234Z",
+      "last_observed_at": "2026-11-27T12:43:10.234Z"
+    },
+    {
+      "id": "5f1c98e7-d028-4e6b-8071-0758bb1ba515",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "kind": "wait",
+      "reason": "approval",
+      "detail": "Awaiting frame sign-off",
+      "started_at": "2026-11-27T12:43:10.234Z",
+      "ended_at": "2026-11-27T14:24:45.794Z",
+      "last_observed_at": "2026-11-27T14:24:45.794Z"
+    },
+    {
+      "id": "9a9673f2-cd54-490d-87e1-494ab7783ef5",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "kind": "work",
+      "activity": "planning",
+      "started_at": "2026-11-27T14:24:45.794Z",
+      "ended_at": "2026-11-27T14:26:09.034Z",
+      "last_observed_at": "2026-11-27T14:26:09.034Z"
+    },
+    {
+      "id": "df8d25bd-483b-46a3-960f-5b87f6a7ab12",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "kind": "wait",
+      "reason": "approval",
+      "detail": "Awaiting revised frame sign-off",
+      "started_at": "2026-11-27T14:26:09.034Z",
+      "ended_at": "2026-11-27T18:07:53.905Z",
+      "last_observed_at": "2026-11-27T18:07:53.905Z"
+    },
+    {
+      "id": "f77addc2-79e4-475b-ba8f-0cd31a378fc7",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "kind": "work",
+      "activity": "planning",
+      "started_at": "2026-11-27T18:07:53.905Z",
+      "ended_at": "2026-11-27T18:08:36.713Z",
+      "last_observed_at": "2026-11-27T18:08:36.713Z"
+    },
+    {
+      "id": "8527f3ba-59bf-4b95-8c5a-88d3b6e59699",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "kind": "wait",
+      "reason": "user_input",
+      "detail": "Awaiting Frame commit confirmation",
+      "started_at": "2026-11-27T18:08:36.713Z",
+      "ended_at": "2026-11-27T18:09:30.507Z",
+      "last_observed_at": "2026-11-27T18:09:30.507Z"
+    },
+    {
+      "id": "c3d105f9-dfd9-4618-bd6d-79546a276c0d",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "kind": "work",
+      "activity": "planning",
+      "started_at": "2026-11-27T18:09:30.507Z",
+      "ended_at": "2026-11-27T18:09:35.927Z",
+      "last_observed_at": "2026-11-27T18:09:35.927Z"
+    },
+    {
+      "id": "392df851-f91b-467f-807f-e6a74488a49a",
+      "stage_id": "research",
+      "stage_attempt_id": "a7940a7a-c683-4c80-8009-8e131868dd62",
+      "step": null,
+      "kind": "work",
+      "activity": "investigation",
+      "started_at": "2026-11-27T18:10:07.589Z",
+      "ended_at": "2026-11-27T18:29:47.768Z",
+      "last_observed_at": "2026-11-27T18:29:47.768Z"
+    },
+    {
+      "id": "1a73e490-fa41-4899-b0cb-584ab2b428e2",
+      "stage_id": "research",
+      "stage_attempt_id": "a7940a7a-c683-4c80-8009-8e131868dd62",
+      "step": null,
+      "kind": "wait",
+      "reason": "approval",
+      "detail": "Awaiting research sign-off",
+      "started_at": "2026-11-27T18:29:47.768Z",
+      "ended_at": "2026-11-27T18:30:33.215Z",
+      "last_observed_at": "2026-11-27T18:30:33.215Z"
+    },
+    {
+      "id": "85a34fde-0c11-476b-aafe-1ce619ba5344",
+      "stage_id": "research",
+      "stage_attempt_id": "a7940a7a-c683-4c80-8009-8e131868dd62",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-27T18:30:33.215Z",
+      "ended_at": "2026-11-27T18:32:28.760Z",
+      "last_observed_at": "2026-11-27T18:32:28.760Z"
+    },
+    {
+      "id": "ebfeca9d-dbd6-4afa-9b0e-be4b27a284d0",
+      "stage_id": "research",
+      "stage_attempt_id": "a7940a7a-c683-4c80-8009-8e131868dd62",
+      "step": null,
+      "kind": "wait",
+      "reason": "user_input",
+      "detail": "Awaiting Research commit confirmation",
+      "started_at": "2026-11-27T18:32:28.760Z",
+      "ended_at": "2026-11-27T18:33:17.030Z",
+      "last_observed_at": "2026-11-27T18:33:17.030Z"
+    },
+    {
+      "id": "b844dda3-5e7f-42a6-803b-9bca9d29352e",
+      "stage_id": "research",
+      "stage_attempt_id": "a7940a7a-c683-4c80-8009-8e131868dd62",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-27T18:33:17.030Z",
+      "ended_at": "2026-11-27T18:33:17.087Z",
+      "last_observed_at": "2026-11-27T18:33:17.087Z"
+    },
+    {
+      "id": "89f7def8-4846-4f12-a350-c63e2c1e1711",
+      "stage_id": "evaluate",
+      "stage_attempt_id": "8f27269c-bc55-4fd3-9fbc-a166b1f9ddee",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-27T18:33:27.399Z",
+      "ended_at": "2026-11-27T18:38:14.718Z",
+      "last_observed_at": "2026-11-27T18:38:14.718Z"
+    },
+    {
+      "id": "5fa0846c-88aa-44f0-aaac-5b3d903f6b56",
+      "stage_id": "evaluate",
+      "stage_attempt_id": "8f27269c-bc55-4fd3-9fbc-a166b1f9ddee",
+      "step": null,
+      "kind": "wait",
+      "reason": "approval",
+      "detail": "Awaiting evaluate sign-off",
+      "started_at": "2026-11-27T18:38:14.718Z",
+      "ended_at": "2026-11-27T18:39:25.722Z",
+      "last_observed_at": "2026-11-27T18:39:25.722Z"
+    },
+    {
+      "id": "64d4cc41-c53c-49d5-8637-829ae74a4812",
+      "stage_id": "evaluate",
+      "stage_attempt_id": "8f27269c-bc55-4fd3-9fbc-a166b1f9ddee",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-27T18:39:25.722Z",
+      "ended_at": "2026-11-27T18:39:50.447Z",
+      "last_observed_at": "2026-11-27T18:39:50.447Z"
+    },
+    {
+      "id": "179b1e35-7c04-4904-ad7e-36360ca2aeda",
+      "stage_id": "evaluate",
+      "stage_attempt_id": "8f27269c-bc55-4fd3-9fbc-a166b1f9ddee",
+      "step": null,
+      "kind": "wait",
+      "reason": "user_input",
+      "detail": "Awaiting Evaluate commit confirmation",
+      "started_at": "2026-11-27T18:39:50.447Z",
+      "ended_at": "2026-11-27T18:40:46.584Z",
+      "last_observed_at": "2026-11-27T18:40:46.584Z"
+    },
+    {
+      "id": "0514d96c-8163-4443-9fcc-15f600036c09",
+      "stage_id": "evaluate",
+      "stage_attempt_id": "8f27269c-bc55-4fd3-9fbc-a166b1f9ddee",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-27T18:40:46.584Z",
+      "ended_at": "2026-11-27T18:40:46.642Z",
+      "last_observed_at": "2026-11-27T18:40:46.642Z"
+    },
+    {
+      "id": "e6e32050-a3b1-44b4-a7ed-ccc9bb389c1b",
+      "stage_id": "solution",
+      "stage_attempt_id": "59fa2ec7-b51d-497c-af66-4a680f84859a",
+      "step": null,
+      "kind": "work",
+      "activity": "documentation",
+      "started_at": "2026-11-27T18:41:08.384Z",
+      "ended_at": "2026-11-28T06:26:54.719Z",
+      "last_observed_at": "2026-11-28T06:26:54.719Z"
+    },
+    {
+      "id": "4ed6cb80-3016-4d9f-afdd-36633be2c8eb",
+      "stage_id": "solution",
+      "stage_attempt_id": "59fa2ec7-b51d-497c-af66-4a680f84859a",
+      "step": null,
+      "kind": "wait",
+      "reason": "approval",
+      "detail": "Awaiting solution sign-off and developer estimates",
+      "started_at": "2026-11-28T06:26:54.719Z",
+      "ended_at": "2026-11-28T06:31:02.731Z",
+      "last_observed_at": "2026-11-28T06:31:02.731Z"
+    },
+    {
+      "id": "2598768a-a653-4905-a405-ff68b678d437",
+      "stage_id": "solution",
+      "stage_attempt_id": "59fa2ec7-b51d-497c-af66-4a680f84859a",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-28T06:31:02.731Z",
+      "ended_at": "2026-11-28T06:32:34.537Z",
+      "last_observed_at": "2026-11-28T06:32:34.537Z"
+    },
+    {
+      "id": "6588e48c-7a63-4dd3-b78b-2e2900425a02",
+      "stage_id": "solution",
+      "stage_attempt_id": "59fa2ec7-b51d-497c-af66-4a680f84859a",
+      "step": null,
+      "kind": "wait",
+      "reason": "user_input",
+      "detail": "Awaiting Solution commit confirmation",
+      "started_at": "2026-11-28T06:32:34.537Z",
+      "ended_at": "2026-11-28T06:33:22.522Z",
+      "last_observed_at": "2026-11-28T06:33:22.522Z"
+    },
+    {
+      "id": "a465b0be-c044-4e9b-81a9-0d696cfb8744",
+      "stage_id": "solution",
+      "stage_attempt_id": "59fa2ec7-b51d-497c-af66-4a680f84859a",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-28T06:33:22.522Z",
+      "ended_at": "2026-11-28T06:33:22.578Z",
+      "last_observed_at": "2026-11-28T06:33:22.578Z"
+    },
+    {
+      "id": "850386ac-34e3-4f16-8958-412002cf506b",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-28T06:33:34.897Z",
+      "ended_at": "2026-11-28T06:33:42.259Z",
+      "last_observed_at": "2026-11-28T06:33:42.259Z"
+    },
+    {
+      "id": "71c86957-ac74-4a8b-94d9-2c0116cab054",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+      "step": null,
+      "kind": "wait",
+      "reason": "user_input",
+      "detail": "Awaiting draft MR approver",
+      "started_at": "2026-11-28T06:33:42.259Z",
+      "ended_at": "2026-11-28T06:34:12.877Z",
+      "last_observed_at": "2026-11-28T06:34:12.877Z"
+    },
+    {
+      "id": "b587c931-c56f-43ae-b6b0-6f758af6dfbf",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-28T06:34:12.877Z",
+      "ended_at": "2026-11-28T06:34:19.996Z",
+      "last_observed_at": "2026-11-28T06:34:19.996Z"
+    },
+    {
+      "id": "e006afa0-4750-4697-a431-76b08ec4d529",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+      "step": null,
+      "kind": "wait",
+      "reason": "user_input",
+      "detail": "Awaiting draft PR URL from self-approver @DmytroBrat",
+      "started_at": "2026-11-28T06:34:19.996Z",
+      "ended_at": "2026-11-28T06:40:06.496Z",
+      "last_observed_at": "2026-11-28T06:40:06.496Z"
+    },
+    {
+      "id": "c985b85e-f8da-400e-b5c8-d3f3b595f80b",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-28T06:40:06.496Z",
+      "ended_at": "2026-11-28T06:40:15.622Z",
+      "last_observed_at": "2026-11-28T06:40:15.622Z"
+    },
+    {
+      "id": "5fd23d2a-7194-4402-9c8e-2914efaaab2b",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+      "step": null,
+      "kind": "wait",
+      "reason": "user_input",
+      "detail": "Awaiting PR #1 conversion to draft",
+      "started_at": "2026-11-28T06:40:15.622Z",
+      "ended_at": "2026-11-28T06:41:27.114Z",
+      "last_observed_at": "2026-11-28T06:41:27.114Z"
+    },
+    {
+      "id": "b7213e77-1156-4666-8ca2-6366a82e7c0c",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-28T06:41:27.114Z",
+      "ended_at": "2026-11-28T06:41:43.273Z",
+      "last_observed_at": "2026-11-28T06:41:43.273Z"
+    },
+    {
+      "id": "bb0e3af2-3f5f-4da0-864e-9e854dc81068",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+      "step": null,
+      "kind": "wait",
+      "reason": "approval",
+      "detail": "Awaiting self-review by @DmytroBrat on https://github.com/DmytroBrat/tournament-iq/pull/1",
+      "started_at": "2026-11-28T06:41:43.273Z",
+      "ended_at": "2026-11-28T06:42:50.143Z",
+      "last_observed_at": "2026-11-28T06:42:50.143Z"
+    },
+    {
+      "id": "01267005-dfc6-42bb-a566-a50e70985779",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-28T06:42:50.143Z",
+      "ended_at": "2026-11-28T06:43:03.187Z",
+      "last_observed_at": "2026-11-28T06:43:03.187Z"
+    },
+    {
+      "id": "5003f2b8-0c69-44fe-959b-cf7c97936f2e",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "83f38694-b4c9-4550-87ea-8c3ef7a811c3",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-28T06:43:33.124Z",
+      "ended_at": "2026-11-28T06:43:33.249Z",
+      "last_observed_at": "2026-11-28T06:43:33.249Z"
+    },
+    {
+      "id": "da63e1b8-085f-45c7-9dac-9eb1158258c5",
+      "stage_id": "publish",
+      "stage_attempt_id": "1764eb27-a76d-4d5f-8063-a451484d0b9b",
+      "step": null,
+      "kind": "work",
+      "activity": "documentation",
+      "started_at": "2026-11-28T06:47:51.739Z",
+      "ended_at": "2026-11-28T08:00:56.127Z",
+      "last_observed_at": "2026-11-28T08:00:56.127Z"
+    },
+    {
+      "id": "29512dda-f501-4909-9d9c-67295777c76a",
+      "stage_id": "publish",
+      "stage_attempt_id": "1764eb27-a76d-4d5f-8063-a451484d0b9b",
+      "step": null,
+      "kind": "wait",
+      "reason": "approval",
+      "detail": "Awaiting publish sign-off",
+      "started_at": "2026-11-28T08:00:56.127Z",
+      "ended_at": "2026-11-28T08:01:26.593Z",
+      "last_observed_at": "2026-11-28T08:01:26.593Z"
+    },
+    {
+      "id": "60c36ce6-0785-4791-bf31-c88090ff955c",
+      "stage_id": "publish",
+      "stage_attempt_id": "1764eb27-a76d-4d5f-8063-a451484d0b9b",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-28T08:01:26.593Z",
+      "ended_at": "2026-11-28T08:01:51.412Z",
+      "last_observed_at": "2026-11-28T08:01:51.412Z"
+    },
+    {
+      "id": "586f3ec4-6a28-4c86-a1cf-0e960ea49ed1",
+      "stage_id": "publish",
+      "stage_attempt_id": "1764eb27-a76d-4d5f-8063-a451484d0b9b",
+      "step": null,
+      "kind": "wait",
+      "reason": "user_input",
+      "detail": "Awaiting Publish commit confirmation",
+      "started_at": "2026-11-28T08:01:51.412Z",
+      "ended_at": "2026-11-28T08:02:39.942Z",
+      "last_observed_at": "2026-11-28T08:02:39.942Z"
+    },
+    {
+      "id": "fa67f475-eba9-4a36-b777-48773c7b8242",
+      "stage_id": "publish",
+      "stage_attempt_id": "1764eb27-a76d-4d5f-8063-a451484d0b9b",
+      "step": null,
+      "kind": "work",
+      "activity": "documentation",
+      "started_at": "2026-11-28T08:02:39.942Z",
+      "ended_at": "2026-11-28T08:02:40.003Z",
+      "last_observed_at": "2026-11-28T08:02:40.003Z"
+    },
+    {
+      "id": "5f575edb-8b06-44ba-94bd-5e7afd674e3e",
+      "stage_id": "completion",
+      "stage_attempt_id": "699e5ec9-fff2-4e19-a842-6ace31bdd430",
+      "step": null,
+      "kind": "work",
+      "activity": "documentation",
+      "started_at": "2026-11-28T08:02:49.776Z",
+      "ended_at": "2026-11-28T08:12:11.184Z",
+      "last_observed_at": "2026-11-28T08:12:11.184Z"
+    },
+    {
+      "id": "0e07556d-4bdf-4306-88a5-0cea5c0c4073",
+      "stage_id": "completion",
+      "stage_attempt_id": "699e5ec9-fff2-4e19-a842-6ace31bdd430",
+      "step": null,
+      "kind": "wait",
+      "reason": "approval",
+      "detail": "Awaiting completion sign-off",
+      "started_at": "2026-11-28T08:12:11.184Z",
+      "ended_at": "2026-11-28T08:14:47.300Z",
+      "last_observed_at": "2026-11-28T08:14:47.300Z"
+    },
+    {
+      "id": "c824f893-f7cf-475f-9a4e-3ac3939ae031",
+      "stage_id": "completion",
+      "stage_attempt_id": "699e5ec9-fff2-4e19-a842-6ace31bdd430",
+      "step": null,
+      "kind": "work",
+      "activity": "documentation",
+      "started_at": "2026-11-28T08:14:47.300Z",
+      "ended_at": "2026-11-28T08:15:46.073Z",
+      "last_observed_at": "2026-11-28T08:15:46.073Z"
+    }
+  ],
+  "checks": [
+    {
+      "id": "context-gathering-signoff-01",
+      "stage_id": "context-gathering",
+      "stage_attempt_id": "b0c2ad33-1132-439d-aaf3-528f8ab354f9",
+      "step": null,
+      "design_revision": 0,
+      "name": "Context Gathering sign-off",
+      "kind": "acceptance",
+      "started_at": "2026-11-27T12:23:18.629Z",
+      "ended_at": "2026-11-27T12:23:18.629Z",
+      "result": "passed",
+      "evidence_ref": "Developer confirmed project-level local TQ-001, requirements/TQ-001.md authority, focus areas, alternative evaluation, approval gates, and no application implementation during Design.",
+      "source": "developer",
+      "exit_code": null,
+      "signal": null
+    },
+    {
+      "id": "ceremony-signoff-01",
+      "stage_id": "ceremony",
+      "stage_attempt_id": "8d8bb636-2ef3-4698-9549-7f7c381b4f38",
+      "step": null,
+      "design_revision": 0,
+      "name": "Ceremony sign-off",
+      "kind": "acceptance",
+      "started_at": "2026-11-27T12:34:35.662Z",
+      "ended_at": "2026-11-27T12:34:35.662Z",
+      "result": "passed",
+      "evidence_ref": "Developer checked out docs/tq-001-constraint-round-robin-scheduling; verified with git branch --show-current.",
+      "source": "developer",
+      "exit_code": null,
+      "signal": null
+    },
+    {
+      "id": "frame-decisions-signoff-01",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "design_revision": 0,
+      "name": "Frame decisions sign-off",
+      "kind": "acceptance",
+      "started_at": "2026-11-27T12:43:01.109Z",
+      "ended_at": "2026-11-27T12:43:01.109Z",
+      "result": "passed",
+      "evidence_ref": "Developer confirmed all three decision tracks: fixture/placement, validation/failure, and preview/persistence.",
+      "source": "developer",
+      "exit_code": null,
+      "signal": null
+    },
+    {
+      "id": "frame-signoff-01",
+      "stage_id": "frame",
+      "stage_attempt_id": "d526deff-0d61-47fb-84a5-7378b379471e",
+      "step": null,
+      "design_revision": 0,
+      "name": "Frame sign-off",
+      "kind": "acceptance",
+      "started_at": "2026-11-27T18:07:58.574Z",
+      "ended_at": "2026-11-27T18:07:58.574Z",
+      "result": "passed",
+      "evidence_ref": "Developer approved the revised Frame with 20 known criteria and accepted PEC1 and PEC4; PEC2 and PEC3 were removed.",
+      "source": "developer",
+      "exit_code": null,
+      "signal": null
+    },
+    {
+      "id": "research-signoff-01",
+      "stage_id": "research",
+      "stage_attempt_id": "a7940a7a-c683-4c80-8009-8e131868dd62",
+      "step": null,
+      "design_revision": 0,
+      "name": "Research sign-off",
+      "kind": "acceptance",
+      "started_at": "2026-11-27T18:30:33.271Z",
+      "ended_at": "2026-11-27T18:30:33.271Z",
+      "result": "passed",
+      "evidence_ref": "Developer replied да to the combined Research sign-off on 2026-11-27",
+      "source": "developer confirmation",
+      "exit_code": null,
+      "signal": null
+    },
+    {
+      "id": "evaluate-signoff-01",
+      "stage_id": "evaluate",
+      "stage_attempt_id": "8f27269c-bc55-4fd3-9fbc-a166b1f9ddee",
+      "step": null,
+      "design_revision": 0,
+      "name": "Evaluate sign-off",
+      "kind": "acceptance",
+      "started_at": "2026-11-27T18:39:25.775Z",
+      "ended_at": "2026-11-27T18:39:25.775Z",
+      "result": "passed",
+      "evidence_ref": "Developer replied да to the combined Evaluate sign-off on 2026-11-27",
+      "source": "developer confirmation",
+      "exit_code": null,
+      "signal": null
+    },
+    {
+      "id": "solution-signoff-01",
+      "stage_id": "solution",
+      "stage_attempt_id": "59fa2ec7-b51d-497c-af66-4a680f84859a",
+      "step": null,
+      "design_revision": 0,
+      "name": "Solution sign-off",
+      "kind": "acceptance",
+      "started_at": "2026-11-28T06:32:01.932Z",
+      "ended_at": "2026-11-28T06:32:01.932Z",
+      "result": "passed",
+      "evidence_ref": "Developer confirmed Solution and supplied estimates totaling 10d on 2026-11-28",
+      "source": "developer confirmation",
+      "exit_code": null,
+      "signal": null
+    },
+    {
+      "id": "gate-round-01",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "83f38694-b4c9-4550-87ea-8c3ef7a811c3",
+      "step": null,
+      "design_revision": 1,
+      "name": "Design approval",
+      "kind": "acceptance",
+      "started_at": "2026-11-28T06:43:33.182Z",
+      "ended_at": "2026-11-28T06:43:33.182Z",
+      "result": "passed",
+      "evidence_ref": "Self-approver @DmytroBrat confirmed PR #1 approved with no concerns on 2026-11-28",
+      "source": "developer confirmation",
+      "exit_code": null,
+      "signal": null
+    },
+    {
+      "id": "publish-signoff-01",
+      "stage_id": "publish",
+      "stage_attempt_id": "1764eb27-a76d-4d5f-8063-a451484d0b9b",
+      "step": null,
+      "design_revision": 1,
+      "name": "Publish sign-off",
+      "kind": "acceptance",
+      "started_at": "2026-11-28T08:01:26.653Z",
+      "ended_at": "2026-11-28T08:01:26.653Z",
+      "result": "passed",
+      "evidence_ref": "Developer approved permanent documentation updates on 2026-11-28",
+      "source": "developer confirmation",
+      "exit_code": null,
+      "signal": null
+    },
+    {
+      "id": "completion-signoff-01",
+      "stage_id": "completion",
+      "stage_attempt_id": "699e5ec9-fff2-4e19-a842-6ace31bdd430",
+      "step": null,
+      "design_revision": 1,
+      "name": "Completion sign-off",
+      "kind": "acceptance",
+      "started_at": "2026-11-28T08:14:47.373Z",
+      "ended_at": "2026-11-28T08:14:47.373Z",
+      "result": "passed",
+      "evidence_ref": "Developer approved Completion and archived handoff on 2026-11-28",
+      "source": "developer confirmation",
+      "exit_code": null,
+      "signal": null
+    }
+  ],
+  "usage_samples": [],
+  "metrics": {
+    "as_of": "2026-11-28T08:15:46.197Z",
+    "lead_time_seconds": null,
+    "cycle_time_seconds": 71709.812,
+    "observed_work_seconds": 49619.147,
+    "observed_wait_seconds": 21660.476,
+    "open_work_seconds": 0,
+    "open_wait_seconds": 0,
+    "wait_seconds_to_date": 21660.476,
+    "unclassified_seconds": 434.1390000000065,
+    "rework_seconds": 0,
+    "blocked_seconds": 0,
+    "approval_wait_seconds": 20839.239,
+    "failed_checks": 0,
+    "first_pass_verification_rate": 1,
+    "human_reported_seconds": null,
+    "tokens": null,
+    "token_coverage": "unavailable"
+  }
+}
