@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "lifecycle": "design",
-  "design_revision": 0,
+  "design_revision": 1,
   "ticket": "TQ-001",
   "tracking_started_at": "2026-11-27T12:20:32.373Z",
   "ticket_created_at": null,
@@ -77,26 +77,44 @@
     },
     {
       "id": "solution",
-      "status": "waiting",
+      "status": "completed",
       "attempts": [
         {
           "id": "59fa2ec7-b51d-497c-af66-4a680f84859a",
           "started_at": "2026-11-27T18:41:08.384Z",
-          "ended_at": null,
+          "ended_at": "2026-11-28T06:33:22.578Z",
           "trigger": "initial",
-          "outcome": null
+          "outcome": "completed"
         }
       ]
     },
     {
       "id": "review-gate",
-      "status": "pending",
-      "attempts": []
+      "status": "completed",
+      "attempts": [
+        {
+          "id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+          "started_at": "2026-11-28T06:33:34.897Z",
+          "ended_at": "2026-11-28T06:43:03.187Z",
+          "trigger": "initial",
+          "outcome": "completed"
+        },
+        {
+          "id": "83f38694-b4c9-4550-87ea-8c3ef7a811c3",
+          "started_at": "2026-11-28T06:43:33.124Z",
+          "ended_at": "2026-11-28T06:43:33.249Z",
+          "trigger": "reopened",
+          "outcome": "completed"
+        }
+      ]
     },
     {
       "id": "address-feedback",
-      "status": "pending",
-      "attempts": []
+      "status": "skipped",
+      "attempts": [],
+      "skip_reason": "no_concerns",
+      "evidence_ref": "Developer confirmed PR #1 approved with no concerns on 2026-11-28",
+      "skipped_at": "2026-11-28T06:43:33.316Z"
     },
     {
       "id": "publish",
@@ -462,8 +480,133 @@
       "reason": "user_input",
       "detail": "Awaiting Solution commit confirmation",
       "started_at": "2026-11-28T06:32:34.537Z",
-      "ended_at": null,
-      "last_observed_at": "2026-11-28T06:32:34.537Z"
+      "ended_at": "2026-11-28T06:33:22.522Z",
+      "last_observed_at": "2026-11-28T06:33:22.522Z"
+    },
+    {
+      "id": "a465b0be-c044-4e9b-81a9-0d696cfb8744",
+      "stage_id": "solution",
+      "stage_attempt_id": "59fa2ec7-b51d-497c-af66-4a680f84859a",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-28T06:33:22.522Z",
+      "ended_at": "2026-11-28T06:33:22.578Z",
+      "last_observed_at": "2026-11-28T06:33:22.578Z"
+    },
+    {
+      "id": "850386ac-34e3-4f16-8958-412002cf506b",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-28T06:33:34.897Z",
+      "ended_at": "2026-11-28T06:33:42.259Z",
+      "last_observed_at": "2026-11-28T06:33:42.259Z"
+    },
+    {
+      "id": "71c86957-ac74-4a8b-94d9-2c0116cab054",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+      "step": null,
+      "kind": "wait",
+      "reason": "user_input",
+      "detail": "Awaiting draft MR approver",
+      "started_at": "2026-11-28T06:33:42.259Z",
+      "ended_at": "2026-11-28T06:34:12.877Z",
+      "last_observed_at": "2026-11-28T06:34:12.877Z"
+    },
+    {
+      "id": "b587c931-c56f-43ae-b6b0-6f758af6dfbf",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-28T06:34:12.877Z",
+      "ended_at": "2026-11-28T06:34:19.996Z",
+      "last_observed_at": "2026-11-28T06:34:19.996Z"
+    },
+    {
+      "id": "e006afa0-4750-4697-a431-76b08ec4d529",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+      "step": null,
+      "kind": "wait",
+      "reason": "user_input",
+      "detail": "Awaiting draft PR URL from self-approver @DmytroBrat",
+      "started_at": "2026-11-28T06:34:19.996Z",
+      "ended_at": "2026-11-28T06:40:06.496Z",
+      "last_observed_at": "2026-11-28T06:40:06.496Z"
+    },
+    {
+      "id": "c985b85e-f8da-400e-b5c8-d3f3b595f80b",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-28T06:40:06.496Z",
+      "ended_at": "2026-11-28T06:40:15.622Z",
+      "last_observed_at": "2026-11-28T06:40:15.622Z"
+    },
+    {
+      "id": "5fd23d2a-7194-4402-9c8e-2914efaaab2b",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+      "step": null,
+      "kind": "wait",
+      "reason": "user_input",
+      "detail": "Awaiting PR #1 conversion to draft",
+      "started_at": "2026-11-28T06:40:15.622Z",
+      "ended_at": "2026-11-28T06:41:27.114Z",
+      "last_observed_at": "2026-11-28T06:41:27.114Z"
+    },
+    {
+      "id": "b7213e77-1156-4666-8ca2-6366a82e7c0c",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-28T06:41:27.114Z",
+      "ended_at": "2026-11-28T06:41:43.273Z",
+      "last_observed_at": "2026-11-28T06:41:43.273Z"
+    },
+    {
+      "id": "bb0e3af2-3f5f-4da0-864e-9e854dc81068",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+      "step": null,
+      "kind": "wait",
+      "reason": "approval",
+      "detail": "Awaiting self-review by @DmytroBrat on https://github.com/DmytroBrat/tournament-iq/pull/1",
+      "started_at": "2026-11-28T06:41:43.273Z",
+      "ended_at": "2026-11-28T06:42:50.143Z",
+      "last_observed_at": "2026-11-28T06:42:50.143Z"
+    },
+    {
+      "id": "01267005-dfc6-42bb-a566-a50e70985779",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "931d8b19-aa65-407a-b410-1c374c105f1f",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-28T06:42:50.143Z",
+      "ended_at": "2026-11-28T06:43:03.187Z",
+      "last_observed_at": "2026-11-28T06:43:03.187Z"
+    },
+    {
+      "id": "5003f2b8-0c69-44fe-959b-cf7c97936f2e",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "83f38694-b4c9-4550-87ea-8c3ef7a811c3",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-28T06:43:33.124Z",
+      "ended_at": "2026-11-28T06:43:33.249Z",
+      "last_observed_at": "2026-11-28T06:43:33.249Z"
     }
   ],
   "checks": [
@@ -578,22 +721,38 @@
       "source": "developer confirmation",
       "exit_code": null,
       "signal": null
+    },
+    {
+      "id": "gate-round-01",
+      "stage_id": "review-gate",
+      "stage_attempt_id": "83f38694-b4c9-4550-87ea-8c3ef7a811c3",
+      "step": null,
+      "design_revision": 1,
+      "name": "Design approval",
+      "kind": "acceptance",
+      "started_at": "2026-11-28T06:43:33.182Z",
+      "ended_at": "2026-11-28T06:43:33.182Z",
+      "result": "passed",
+      "evidence_ref": "Self-approver @DmytroBrat confirmed PR #1 approved with no concerns on 2026-11-28",
+      "source": "developer confirmation",
+      "exit_code": null,
+      "signal": null
     }
   ],
   "usage_samples": [],
   "metrics": {
-    "as_of": "2026-11-28T06:32:34.607Z",
+    "as_of": "2026-11-28T06:43:58.318Z",
     "lead_time_seconds": null,
     "cycle_time_seconds": null,
-    "observed_work_seconds": 44536.706999999995,
-    "observed_wait_seconds": 20861.899,
+    "observed_work_seconds": 44589.69799999999,
+    "observed_wait_seconds": 21425.363999999998,
     "open_work_seconds": 0,
-    "open_wait_seconds": 0.07,
-    "wait_seconds_to_date": 20861.969,
-    "unclassified_seconds": 123.55800000000062,
+    "open_wait_seconds": 0,
+    "wait_seconds_to_date": 21425.363999999998,
+    "unclassified_seconds": 190.88300000001982,
     "rework_seconds": 0,
     "blocked_seconds": 0,
-    "approval_wait_seconds": 20585.787,
+    "approval_wait_seconds": 20652.657,
     "failed_checks": 0,
     "first_pass_verification_rate": 1,
     "human_reported_seconds": null,

@@ -4,7 +4,7 @@ title: TQ-001 Constraint-Based Round-Robin Schedule Generation
 description: Tracks the project design for deterministic round-robin fixture generation and constrained schedule placement.
 tags: [design, scheduling, round-robin, constraints]
 generated: { by: process:design-context, at: 2026-11-27T12:10:59Z }
-updated: { by: process:design-solution, at: 2026-11-28T02:36:00Z }
+updated: { by: process:design-address-feedback, at: 2026-11-28T02:52:00Z }
 ---
 
 # Design Report — TQ-001: Constraint-Based Round-Robin Schedule Generation
@@ -16,8 +16,8 @@ TQ-001 is a local project ticket with no external tracker integration. It define
 ## State
 
 ```yaml
-current_stage: review-gate
-completed_stages: [context-gathering, ceremony, frame, research, evaluate, solution]
+current_stage: publish
+completed_stages: [context-gathering, ceremony, frame, research, evaluate, solution, review-gate, address-feedback]
 selected_artifacts:
   - '../solution/Architecture.md'
   - '../solution/Design - Fixture and Placement Strategy.md'
@@ -25,7 +25,7 @@ selected_artifacts:
   - '../solution/Design - Preview and Persistence Protocol.md'
   - '../solution/Stack.md'
   - '../solution/Efforts.md'
-next_action: 'Commit the approved Solution artifacts, then open the Review Gate'
+next_action: 'Commit the approved review outcome, then run Publish'
 context_fingerprint: ''
 ```
 
@@ -64,7 +64,7 @@ context_fingerprint: ''
 | Ticket | TQ-001 |
 | Branch | `docs/tq-001-constraint-round-robin-scheduling` |
 | Status | 🔄 In Progress |
-| Phase | 🎯 Context Gathering ✅ · 🚀 Ceremony ✅ · 📋 Frame ✅ · 🔍 Research ✅ · 🏗 Evaluate ✅ · 📦 Solution ✅ · 🔎 Review 🔄 · 💬 Address Feedback ⏳ · 📤 Publish ⏳ · 🏁 Completion ⏳ |
+| Phase | 🎯 Context Gathering ✅ · 🚀 Ceremony ✅ · 📋 Frame ✅ · 🔍 Research ✅ · 🏗 Evaluate ✅ · 📦 Solution ✅ · 🔎 Review ✅ · 💬 Address Feedback ⏭️ (skipped) · 📤 Publish ⏳ · 🏁 Completion ⏳ |
 
 ---
 
@@ -73,7 +73,7 @@ context_fingerprint: ''
 <!-- design-metrics:start -->
 Source: [stat.json](stat.json). **Elapsed** = wall-clock time from the stage's first start to its completion (includes any wait). **Work** = summed observed work intervals (active effort) within that span. **Wait** = summed observed wait intervals (blocked on developer input, approval, or an external dependency) within that span. Work + Wait can read less than Elapsed when time went unclassified, or more after a retry reopened the stage. Durations are shown as `Xh Ym Zs`, rounded to the nearest second; open intervals are excluded from Elapsed/Work/Wait. Token subtotals have unavailable coverage; ticket usage is not allocated to individual units.
 
-Observed work: 12h 22m 17s · Wait to date: 5h 47m 42s (closed 5h 47m 42s + current 0s) · Unclassified: 2m 4s
+Observed work: 12h 23m 10s · Wait to date: 5h 57m 5s (closed 5h 57m 5s + current 0s) · Unclassified: 3m 11s
 
 | Stage | Started (UTC) | Completed (UTC) | Elapsed | Work | Wait | Input tokens | Output tokens | Coverage | Attempts | Failed checks |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -82,9 +82,9 @@ Observed work: 12h 22m 17s · Wait to date: 5h 47m 42s (closed 5h 47m 42s + curr
 | frame (completed) | 2026-11-27T12:37:49.458Z | 2026-11-27T18:09:35.927Z | 5h 31m 46s | 5m 48s | 5h 25m 58s | unavailable | unavailable | from_tracking_start | 1 | 0 |
 | research (completed) | 2026-11-27T18:10:07.589Z | 2026-11-27T18:33:17.087Z | 23m 9s | 21m 36s | 1m 34s | unavailable | unavailable | from_tracking_start | 1 | 0 |
 | evaluate (completed) | 2026-11-27T18:33:27.399Z | 2026-11-27T18:40:46.642Z | 7m 19s | 5m 12s | 2m 7s | unavailable | unavailable | from_tracking_start | 1 | 0 |
-| solution (waiting) | 2026-11-27T18:41:08.384Z | unavailable | unavailable | 11h 47m 18s | 4m 8s | unavailable | unavailable | from_tracking_start | 1 | 0 |
-| review-gate (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
-| address-feedback (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
+| solution (completed) | 2026-11-27T18:41:08.384Z | 2026-11-28T06:33:22.578Z | 11h 52m 14s | 11h 47m 18s | 4m 56s | unavailable | unavailable | from_tracking_start | 1 | 0 |
+| review-gate (completed) | 2026-11-28T06:33:34.897Z | 2026-11-28T06:43:33.249Z | 9m 58s | 53s | 8m 35s | unavailable | unavailable | from_tracking_start | 2 | 0 |
+| address-feedback (skipped) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
 | publish (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
 | completion (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
 <!-- design-metrics:end -->
@@ -171,9 +171,9 @@ Every material concern is assigned to a selected artifact or confirmed design de
 
 ## Gate
 
-- Approver: —
-- Draft MR: —
-- Approved: — _(a date once approved, or `declined`)_
+- Approver: `@DmytroBrat`
+- Draft MR: https://github.com/DmytroBrat/tournament-iq/pull/1
+- Approved: 2026-11-28
 - Decline reason: — _(filled in by Address Feedback only if declined)_
 
 ---
