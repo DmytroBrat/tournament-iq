@@ -40,7 +40,7 @@ flowchart LR
 | API | Normalize input, construct exact single round-robin fixtures, place them with deterministic bounded CSP backtracking, validate the complete result independently, expose Problem Details and coordinate all match-schedule writes. | Adds two REST operations and a tournament-first lock protocol inside the existing modular monolith. |
 | PostgreSQL | Retain durable tournament, team or field registration and match data; provide the tournament row serialization point and atomic transaction boundary. | Uses the existing schema. Preview creates no row and generated save inserts only existing match rows. |
 
-The target remains the local Docker Compose deployment documented by the [active architecture](<../../../../Target Architecture (HLD)/v1/System Overview.md>). The browser still reaches the API through Nginx or the Vite proxy, and the API remains the only PostgreSQL client.
+The target remains the local Docker Compose deployment documented by the [active architecture](<../../../../../Target Architecture (HLD)/v1/System Overview.md>). The browser still reaches the API through Nginx or the Vite proxy, and the API remains the only PostgreSQL client.
 
 ## End-to-end control flow
 
@@ -169,7 +169,7 @@ Detailed component contracts are recorded in [Fixture and Placement Strategy](<D
 
 ## Documentation impact
 
-Publish updates the target [Web](<../../../../Target Architecture (HLD)/v1/Containers/Web.md>), [API](<../../../../Target Architecture (HLD)/v1/Containers/API.md>), [PostgreSQL](<../../../../Target Architecture (HLD)/v1/Containers/PostgreSQL.md>) and [System Sizing](<../../../../Target Architecture (HLD)/v1/System Sizing.md>) documents. After implementation, the LLD updates [Manual Scheduling](<../../../../System Architecture (LLD)/API/Manual Scheduling.md>) and adds the generated-scheduling component flow. The design authority is the accepted [Frame](<../design/00 Frame.md>) and the Evaluate records for [placement](<../design/02 Evaluate - Fixture and Placement Strategy.md>), [validation](<../design/02 Evaluate - Validation and Failure Model.md>) and [persistence](<../design/02 Evaluate - Preview and Persistence Protocol.md>).
+Publish updates the target [Web](<../../../../../Target Architecture (HLD)/v1/Containers/Web.md>), [API](<../../../../../Target Architecture (HLD)/v1/Containers/API.md>), [PostgreSQL](<../../../../../Target Architecture (HLD)/v1/Containers/PostgreSQL.md>) and [System Sizing](<../../../../../Target Architecture (HLD)/v1/System Sizing.md>) documents. After implementation, the LLD updates [Manual Scheduling](<../../../../../System Architecture (LLD)/API/Manual Scheduling.md>) and adds the generated-scheduling component flow. The design authority is the accepted [Frame](<../design/00 Frame.md>) and the Evaluate records for [placement](<../design/02 Evaluate - Fixture and Placement Strategy.md>), [validation](<../design/02 Evaluate - Validation and Failure Model.md>) and [persistence](<../design/02 Evaluate - Preview and Persistence Protocol.md>).
 
 ## Considered Options
 

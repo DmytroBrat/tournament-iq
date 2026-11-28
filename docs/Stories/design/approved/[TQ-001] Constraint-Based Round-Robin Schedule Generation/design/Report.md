@@ -4,7 +4,7 @@ title: TQ-001 Constraint-Based Round-Robin Schedule Generation
 description: Tracks the project design for deterministic round-robin fixture generation and constrained schedule placement.
 tags: [design, scheduling, round-robin, constraints]
 generated: { by: process:design-context, at: 2026-11-27T12:10:59Z }
-updated: { by: process:design-publish, at: 2026-11-28T08:08:00Z }
+updated: { by: process:design-completion, at: 2026-11-28T08:27:00Z }
 ---
 
 # Design Report — TQ-001: Constraint-Based Round-Robin Schedule Generation
@@ -16,8 +16,8 @@ TQ-001 is a local project ticket with no external tracker integration. It define
 ## State
 
 ```yaml
-current_stage: completion
-completed_stages: [context-gathering, ceremony, frame, research, evaluate, solution, review-gate, address-feedback, publish]
+current_stage: complete
+completed_stages: [context-gathering, ceremony, frame, research, evaluate, solution, review-gate, address-feedback, publish, completion]
 selected_artifacts:
   - '../solution/Architecture.md'
   - '../solution/Design - Fixture and Placement Strategy.md'
@@ -25,7 +25,7 @@ selected_artifacts:
   - '../solution/Design - Preview and Persistence Protocol.md'
   - '../solution/Stack.md'
   - '../solution/Efforts.md'
-next_action: 'Commit the approved permanent documentation updates, then run Completion'
+next_action: 'Start implementation with `$dev TQ-001` using the approved solution and local slices TQ-001-I1 through TQ-001-I7'
 context_fingerprint: ''
 ```
 
@@ -63,8 +63,8 @@ context_fingerprint: ''
 | ----- | ----- |
 | Ticket | TQ-001 |
 | Branch | `docs/tq-001-constraint-round-robin-scheduling` |
-| Status | 🔄 In Progress |
-| Phase | 🎯 Context Gathering ✅ · 🚀 Ceremony ✅ · 📋 Frame ✅ · 🔍 Research ✅ · 🏗 Evaluate ✅ · 📦 Solution ✅ · 🔎 Review ✅ · 💬 Address Feedback ⏭️ (skipped) · 📤 Publish ✅ · 🏁 Completion 🔄 |
+| Status | ✅ Complete |
+| Phase | 🎯 Context Gathering ✅ · 🚀 Ceremony ✅ · 📋 Frame ✅ · 🔍 Research ✅ · 🏗 Evaluate ✅ · 📦 Solution ✅ · 🔎 Review ✅ · 💬 Address Feedback ⏭️ (skipped) · 📤 Publish ✅ · 🏁 Completion ✅ |
 
 ---
 
@@ -73,7 +73,7 @@ context_fingerprint: ''
 <!-- design-metrics:start -->
 Source: [stat.json](stat.json). **Elapsed** = wall-clock time from the stage's first start to its completion (includes any wait). **Work** = summed observed work intervals (active effort) within that span. **Wait** = summed observed wait intervals (blocked on developer input, approval, or an external dependency) within that span. Work + Wait can read less than Elapsed when time went unclassified, or more after a retry reopened the stage. Durations are shown as `Xh Ym Zs`, rounded to the nearest second; open intervals are excluded from Elapsed/Work/Wait. Token subtotals have unavailable coverage; ticket usage is not allocated to individual units.
 
-Observed work: 13h 36m 39s · Wait to date: 5h 57m 36s (closed 5h 57m 36s + current 0s) · Unclassified: 7m 4s
+Observed work: 13h 46m 59s · Wait to date: 6h 1m 0s (closed 6h 1m 0s + current 0s) · Unclassified: 7m 14s
 
 | Stage | Started (UTC) | Completed (UTC) | Elapsed | Work | Wait | Input tokens | Output tokens | Coverage | Attempts | Failed checks |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -85,8 +85,8 @@ Observed work: 13h 36m 39s · Wait to date: 5h 57m 36s (closed 5h 57m 36s + curr
 | solution (completed) | 2026-11-27T18:41:08.384Z | 2026-11-28T06:33:22.578Z | 11h 52m 14s | 11h 47m 18s | 4m 56s | unavailable | unavailable | from_tracking_start | 1 | 0 |
 | review-gate (completed) | 2026-11-28T06:33:34.897Z | 2026-11-28T06:43:33.249Z | 9m 58s | 53s | 8m 35s | unavailable | unavailable | from_tracking_start | 2 | 0 |
 | address-feedback (skipped) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
-| publish (waiting) | 2026-11-28T06:47:51.739Z | unavailable | unavailable | 1h 13m 29s | 30s | unavailable | unavailable | from_tracking_start | 1 | 0 |
-| completion (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
+| publish (completed) | 2026-11-28T06:47:51.739Z | 2026-11-28T08:02:40.003Z | 1h 14m 48s | 1h 13m 29s | 1m 19s | unavailable | unavailable | from_tracking_start | 1 | 0 |
+| completion (completed) | 2026-11-28T08:02:49.776Z | 2026-11-28T08:15:46.073Z | 12m 56s | 10m 20s | 2m 36s | unavailable | unavailable | from_tracking_start | 1 | 0 |
 <!-- design-metrics:end -->
 
 ## Assumptions
@@ -194,7 +194,14 @@ Every material concern is assigned to a selected artifact or confirmed design de
 
 ## Implementation Tickets
 
-_Filled in during Completion after implementation tickets are created._
+`TQ-001` is the local design ID. No external issue tracker tickets were published. After archive, start `$dev TQ-001` and use [Architecture](../solution/Architecture.md), the three decision-specific Design files, [Stack](../solution/Stack.md) and [Efforts](../solution/Efforts.md) as the approved implementation handoff.
 
 | Ticket | Summary | Local follow-up |
 | ------ | ------- | --------------- |
+| `TQ-001-I1` | Calibrate execution and lock bounds | Execute [Efforts unit 1](../solution/Efforts.md#work-breakdown) against the execution policy in [Fixture and Placement Strategy](<../solution/Design - Fixture and Placement Strategy.md>). |
+| `TQ-001-I2` | Implement the fixture and CSP placement engine | Execute [Efforts unit 2](../solution/Efforts.md#work-breakdown) using [Fixture and Placement Strategy](<../solution/Design - Fixture and Placement Strategy.md>) as the component contract. |
+| `TQ-001-I3` | Implement the independent validator and failure model | Execute [Efforts unit 3](../solution/Efforts.md#work-breakdown) using [Validation and Failure Model](<../solution/Design - Validation and Failure Model.md>) as the component contract. |
+| `TQ-001-I4` | Implement the read-only preview REST flow | Execute [Efforts unit 4](../solution/Efforts.md#work-breakdown) using [Preview and Persistence Protocol](<../solution/Design - Preview and Persistence Protocol.md>) and [Architecture](../solution/Architecture.md) as boundary evidence. |
+| `TQ-001-I5` | Implement atomic save and shared tournament locking | Execute [Efforts unit 5](../solution/Efforts.md#work-breakdown) using [Preview and Persistence Protocol](<../solution/Design - Preview and Persistence Protocol.md>) as the transaction contract. |
+| `TQ-001-I6` | Implement the Web preview and save flow | Execute [Efforts unit 6](../solution/Efforts.md#work-breakdown) using the Web states and REST contracts in [Preview and Persistence Protocol](<../solution/Design - Preview and Persistence Protocol.md>). |
+| `TQ-001-I7` | Complete acceptance evidence and implementation LLD | Execute [Efforts unit 7](../solution/Efforts.md#work-breakdown) against the verification obligations in [Architecture](../solution/Architecture.md). |

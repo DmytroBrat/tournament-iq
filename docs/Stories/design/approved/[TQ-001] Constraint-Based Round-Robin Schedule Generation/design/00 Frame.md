@@ -56,7 +56,7 @@ The design must add preview-first generation of every single round-robin pairing
 | EC17 | Generation has a bounded execution policy for 2–12 teams. |
 | EC18 | Scheduling domain logic remains independent of Spring and JPA; the design adds no infrastructure, paid service, or external integration. |
 | EC19 | Automated verification covers invariants, deterministic replay, side-effect-free preview, atomic save, and concurrency; architecture documentation is updated. |
-| EC20 | Manual scheduling remains compatible; the exclusions in [TQ-001](<../../../../../requirements/TQ-001.md>) remain outside this design. |
+| EC20 | Manual scheduling remains compatible; the exclusions in [TQ-001](<../../../../../../requirements/TQ-001.md>) remain outside this design. |
 
 ### Proposed ECs
 
@@ -97,16 +97,16 @@ The design must add preview-first generation of every single round-robin pairing
 
 | Dimension | Bound or condition | Source |
 | --- | --- | --- |
-| Teams | 2–12 | [TQ-001](<../../../../../requirements/TQ-001.md>) |
+| Teams | 2–12 | [TQ-001](<../../../../../../requirements/TQ-001.md>) |
 | Fixtures | 1–66, using `N × (N − 1) / 2` | Derived from the team bound |
-| Football fields | A selected subset of registered football fields | [TQ-001](<../../../../../requirements/TQ-001.md>) |
-| Candidate timeline | Derived from tournament dates, daily windows, match duration, and five-minute turnaround | [TQ-001](<../../../../../requirements/TQ-001.md>) |
-| Request pattern | One preview and optional save per organizer action; no throughput target is approved | [System Sizing](<../../../../Target Architecture (HLD)/v1/System Sizing.md>) |
-| Execution budget | Bounded execution is required; a quantitative target is unresolved | [TQ-001](<../../../../../requirements/TQ-001.md>) |
+| Football fields | A selected subset of registered football fields | [TQ-001](<../../../../../../requirements/TQ-001.md>) |
+| Candidate timeline | Derived from tournament dates, daily windows, match duration, and five-minute turnaround | [TQ-001](<../../../../../../requirements/TQ-001.md>) |
+| Request pattern | One preview and optional save per organizer action; no throughput target is approved | [System Sizing](<../../../../../Target Architecture (HLD)/v1/System Sizing.md>) |
+| Execution budget | Bounded execution is required; a quantitative target is unresolved | [TQ-001](<../../../../../../requirements/TQ-001.md>) |
 
 ## Links
 
-- Ticket: [TQ-001](<../../../../../requirements/TQ-001.md>)
+- Ticket: [TQ-001](<../../../../../../requirements/TQ-001.md>)
 - Related tickets: none
-- Target architecture: [active version](<../../../../Target Architecture (HLD)/README.md>), [System Overview](<../../../../Target Architecture (HLD)/v1/System Overview.md>), [Web](<../../../../Target Architecture (HLD)/v1/Containers/Web.md>), [API](<../../../../Target Architecture (HLD)/v1/Containers/API.md>), [PostgreSQL](<../../../../Target Architecture (HLD)/v1/Containers/PostgreSQL.md>), and [System Sizing](<../../../../Target Architecture (HLD)/v1/System Sizing.md>)
-- Current implementation: [Manual Scheduling](<../../../../System Architecture (LLD)/API/Manual Scheduling.md>)
+- Target architecture: [active version](<../../../../../Target Architecture (HLD)/README.md>), [System Overview](<../../../../../Target Architecture (HLD)/v1/System Overview.md>), [Web](<../../../../../Target Architecture (HLD)/v1/Containers/Web.md>), [API](<../../../../../Target Architecture (HLD)/v1/Containers/API.md>), [PostgreSQL](<../../../../../Target Architecture (HLD)/v1/Containers/PostgreSQL.md>), and [System Sizing](<../../../../../Target Architecture (HLD)/v1/System Sizing.md>)
+- Current implementation: [Manual Scheduling](<../../../../../System Architecture (LLD)/API/Manual Scheduling.md>)

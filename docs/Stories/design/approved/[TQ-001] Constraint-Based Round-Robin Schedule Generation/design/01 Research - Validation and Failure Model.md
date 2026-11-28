@@ -19,12 +19,12 @@ Current implementation evidence bounds the alternatives:
 
 | Evidence | Consequence |
 | --- | --- |
-| [`MatchAssignment`](<../../../../../backend/src/main/java/com/artisyn/tournamentiq/match/domain/MatchAssignment.java>) rejects only identical teams and non-forward intervals. | The current domain object does not enforce schedule-wide constraints. |
-| [`MatchService`](<../../../../../backend/src/main/java/com/artisyn/tournamentiq/match/application/MatchService.java>) checks tournament ownership and saves one match. | It does not validate neighbors, overlaps, rest, turnaround, pairing completeness, or daily windows. |
-| [`MatchRepository`](<../../../../../backend/src/main/java/com/artisyn/tournamentiq/match/persistence/MatchRepository.java>) sorts matches only when reading. | Presentation order cannot protect an unordered write. |
-| [Flyway V1](<../../../../../backend/src/main/resources/db/migration/V1__create_tournament_schema.sql>) enforces ownership, distinct teams, and a positive duration. | PostgreSQL does not currently enforce cross-row time or fixture-set rules. |
-| [`TournamentApiIntegrationTest`](<../../../../../backend/src/test/java/com/artisyn/tournamentiq/TournamentApiIntegrationTest.java>) inserts a later match before an earlier match with the same teams and football field. | Both writes succeed; chronological display alone does not validate insertion order. |
-| [`ApiErrors`](<../../../../../backend/src/main/java/com/artisyn/tournamentiq/shared/api/ApiErrors.java>) emits Problem Details with a code and field errors, while [`api.ts`](<../../../../../frontend/src/api.ts>) discards the code and collapses errors by field. | Generated-schedule violations require an additive machine-readable contract and client preservation of repeated violations. |
+| [`MatchAssignment`](<../../../../../../backend/src/main/java/com/artisyn/tournamentiq/match/domain/MatchAssignment.java>) rejects only identical teams and non-forward intervals. | The current domain object does not enforce schedule-wide constraints. |
+| [`MatchService`](<../../../../../../backend/src/main/java/com/artisyn/tournamentiq/match/application/MatchService.java>) checks tournament ownership and saves one match. | It does not validate neighbors, overlaps, rest, turnaround, pairing completeness, or daily windows. |
+| [`MatchRepository`](<../../../../../../backend/src/main/java/com/artisyn/tournamentiq/match/persistence/MatchRepository.java>) sorts matches only when reading. | Presentation order cannot protect an unordered write. |
+| [Flyway V1](<../../../../../../backend/src/main/resources/db/migration/V1__create_tournament_schema.sql>) enforces ownership, distinct teams, and a positive duration. | PostgreSQL does not currently enforce cross-row time or fixture-set rules. |
+| [`TournamentApiIntegrationTest`](<../../../../../../backend/src/test/java/com/artisyn/tournamentiq/TournamentApiIntegrationTest.java>) inserts a later match before an earlier match with the same teams and football field. | Both writes succeed; chronological display alone does not validate insertion order. |
+| [`ApiErrors`](<../../../../../../backend/src/main/java/com/artisyn/tournamentiq/shared/api/ApiErrors.java>) emits Problem Details with a code and field errors, while [`api.ts`](<../../../../../../frontend/src/api.ts>) discards the code and collapses errors by field. | Generated-schedule violations require an additive machine-readable contract and client preservation of repeated violations. |
 
 The accepted [Frame](<00 Frame.md>) requires exact unordered-pair coverage, end-to-start minimum rest, independent validation, correct unordered-input handling, and distinct generation outcomes.
 
