@@ -1,4 +1,5 @@
 ---
+id: be369718
 type: Design Architecture
 title: TQ-001 Constraint-Based Round-Robin Schedule Generation Architecture
 description: Defines the integrated preview, validation and atomic-save architecture for generated tournament match schedules.

@@ -118,8 +118,16 @@
     },
     {
       "id": "publish",
-      "status": "pending",
-      "attempts": []
+      "status": "waiting",
+      "attempts": [
+        {
+          "id": "1764eb27-a76d-4d5f-8063-a451484d0b9b",
+          "started_at": "2026-11-28T06:47:51.739Z",
+          "ended_at": null,
+          "trigger": "initial",
+          "outcome": null
+        }
+      ]
     },
     {
       "id": "completion",
@@ -607,6 +615,52 @@
       "started_at": "2026-11-28T06:43:33.124Z",
       "ended_at": "2026-11-28T06:43:33.249Z",
       "last_observed_at": "2026-11-28T06:43:33.249Z"
+    },
+    {
+      "id": "da63e1b8-085f-45c7-9dac-9eb1158258c5",
+      "stage_id": "publish",
+      "stage_attempt_id": "1764eb27-a76d-4d5f-8063-a451484d0b9b",
+      "step": null,
+      "kind": "work",
+      "activity": "documentation",
+      "started_at": "2026-11-28T06:47:51.739Z",
+      "ended_at": "2026-11-28T08:00:56.127Z",
+      "last_observed_at": "2026-11-28T08:00:56.127Z"
+    },
+    {
+      "id": "29512dda-f501-4909-9d9c-67295777c76a",
+      "stage_id": "publish",
+      "stage_attempt_id": "1764eb27-a76d-4d5f-8063-a451484d0b9b",
+      "step": null,
+      "kind": "wait",
+      "reason": "approval",
+      "detail": "Awaiting publish sign-off",
+      "started_at": "2026-11-28T08:00:56.127Z",
+      "ended_at": "2026-11-28T08:01:26.593Z",
+      "last_observed_at": "2026-11-28T08:01:26.593Z"
+    },
+    {
+      "id": "60c36ce6-0785-4791-bf31-c88090ff955c",
+      "stage_id": "publish",
+      "stage_attempt_id": "1764eb27-a76d-4d5f-8063-a451484d0b9b",
+      "step": null,
+      "kind": "work",
+      "activity": "review",
+      "started_at": "2026-11-28T08:01:26.593Z",
+      "ended_at": "2026-11-28T08:01:51.412Z",
+      "last_observed_at": "2026-11-28T08:01:51.412Z"
+    },
+    {
+      "id": "586f3ec4-6a28-4c86-a1cf-0e960ea49ed1",
+      "stage_id": "publish",
+      "stage_attempt_id": "1764eb27-a76d-4d5f-8063-a451484d0b9b",
+      "step": null,
+      "kind": "wait",
+      "reason": "user_input",
+      "detail": "Awaiting Publish commit confirmation",
+      "started_at": "2026-11-28T08:01:51.412Z",
+      "ended_at": null,
+      "last_observed_at": "2026-11-28T08:01:51.412Z"
     }
   ],
   "checks": [
@@ -737,22 +791,38 @@
       "source": "developer confirmation",
       "exit_code": null,
       "signal": null
+    },
+    {
+      "id": "publish-signoff-01",
+      "stage_id": "publish",
+      "stage_attempt_id": "1764eb27-a76d-4d5f-8063-a451484d0b9b",
+      "step": null,
+      "design_revision": 1,
+      "name": "Publish sign-off",
+      "kind": "acceptance",
+      "started_at": "2026-11-28T08:01:26.653Z",
+      "ended_at": "2026-11-28T08:01:26.653Z",
+      "result": "passed",
+      "evidence_ref": "Developer approved permanent documentation updates on 2026-11-28",
+      "source": "developer confirmation",
+      "exit_code": null,
+      "signal": null
     }
   ],
   "usage_samples": [],
   "metrics": {
-    "as_of": "2026-11-28T06:43:58.318Z",
+    "as_of": "2026-11-28T08:01:51.475Z",
     "lead_time_seconds": null,
     "cycle_time_seconds": null,
-    "observed_work_seconds": 44589.69799999999,
-    "observed_wait_seconds": 21425.363999999998,
+    "observed_work_seconds": 48998.90499999999,
+    "observed_wait_seconds": 21455.829999999998,
     "open_work_seconds": 0,
-    "open_wait_seconds": 0,
-    "wait_seconds_to_date": 21425.363999999998,
-    "unclassified_seconds": 190.88300000001982,
+    "open_wait_seconds": 0.063,
+    "wait_seconds_to_date": 21455.892999999996,
+    "unclassified_seconds": 424.3040000000093,
     "rework_seconds": 0,
     "blocked_seconds": 0,
-    "approval_wait_seconds": 20652.657,
+    "approval_wait_seconds": 20683.123,
     "failed_checks": 0,
     "first_pass_verification_rate": 1,
     "human_reported_seconds": null,

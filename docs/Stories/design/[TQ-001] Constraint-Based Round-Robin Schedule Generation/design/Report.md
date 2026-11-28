@@ -4,7 +4,7 @@ title: TQ-001 Constraint-Based Round-Robin Schedule Generation
 description: Tracks the project design for deterministic round-robin fixture generation and constrained schedule placement.
 tags: [design, scheduling, round-robin, constraints]
 generated: { by: process:design-context, at: 2026-11-27T12:10:59Z }
-updated: { by: process:design-address-feedback, at: 2026-11-28T02:52:00Z }
+updated: { by: process:design-publish, at: 2026-11-28T08:08:00Z }
 ---
 
 # Design Report — TQ-001: Constraint-Based Round-Robin Schedule Generation
@@ -16,8 +16,8 @@ TQ-001 is a local project ticket with no external tracker integration. It define
 ## State
 
 ```yaml
-current_stage: publish
-completed_stages: [context-gathering, ceremony, frame, research, evaluate, solution, review-gate, address-feedback]
+current_stage: completion
+completed_stages: [context-gathering, ceremony, frame, research, evaluate, solution, review-gate, address-feedback, publish]
 selected_artifacts:
   - '../solution/Architecture.md'
   - '../solution/Design - Fixture and Placement Strategy.md'
@@ -25,7 +25,7 @@ selected_artifacts:
   - '../solution/Design - Preview and Persistence Protocol.md'
   - '../solution/Stack.md'
   - '../solution/Efforts.md'
-next_action: 'Commit the approved review outcome, then run Publish'
+next_action: 'Commit the approved permanent documentation updates, then run Completion'
 context_fingerprint: ''
 ```
 
@@ -64,7 +64,7 @@ context_fingerprint: ''
 | Ticket | TQ-001 |
 | Branch | `docs/tq-001-constraint-round-robin-scheduling` |
 | Status | 🔄 In Progress |
-| Phase | 🎯 Context Gathering ✅ · 🚀 Ceremony ✅ · 📋 Frame ✅ · 🔍 Research ✅ · 🏗 Evaluate ✅ · 📦 Solution ✅ · 🔎 Review ✅ · 💬 Address Feedback ⏭️ (skipped) · 📤 Publish ⏳ · 🏁 Completion ⏳ |
+| Phase | 🎯 Context Gathering ✅ · 🚀 Ceremony ✅ · 📋 Frame ✅ · 🔍 Research ✅ · 🏗 Evaluate ✅ · 📦 Solution ✅ · 🔎 Review ✅ · 💬 Address Feedback ⏭️ (skipped) · 📤 Publish ✅ · 🏁 Completion 🔄 |
 
 ---
 
@@ -73,7 +73,7 @@ context_fingerprint: ''
 <!-- design-metrics:start -->
 Source: [stat.json](stat.json). **Elapsed** = wall-clock time from the stage's first start to its completion (includes any wait). **Work** = summed observed work intervals (active effort) within that span. **Wait** = summed observed wait intervals (blocked on developer input, approval, or an external dependency) within that span. Work + Wait can read less than Elapsed when time went unclassified, or more after a retry reopened the stage. Durations are shown as `Xh Ym Zs`, rounded to the nearest second; open intervals are excluded from Elapsed/Work/Wait. Token subtotals have unavailable coverage; ticket usage is not allocated to individual units.
 
-Observed work: 12h 23m 10s · Wait to date: 5h 57m 5s (closed 5h 57m 5s + current 0s) · Unclassified: 3m 11s
+Observed work: 13h 36m 39s · Wait to date: 5h 57m 36s (closed 5h 57m 36s + current 0s) · Unclassified: 7m 4s
 
 | Stage | Started (UTC) | Completed (UTC) | Elapsed | Work | Wait | Input tokens | Output tokens | Coverage | Attempts | Failed checks |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -85,7 +85,7 @@ Observed work: 12h 23m 10s · Wait to date: 5h 57m 5s (closed 5h 57m 5s + curren
 | solution (completed) | 2026-11-27T18:41:08.384Z | 2026-11-28T06:33:22.578Z | 11h 52m 14s | 11h 47m 18s | 4m 56s | unavailable | unavailable | from_tracking_start | 1 | 0 |
 | review-gate (completed) | 2026-11-28T06:33:34.897Z | 2026-11-28T06:43:33.249Z | 9m 58s | 53s | 8m 35s | unavailable | unavailable | from_tracking_start | 2 | 0 |
 | address-feedback (skipped) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
-| publish (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
+| publish (waiting) | 2026-11-28T06:47:51.739Z | unavailable | unavailable | 1h 13m 29s | 30s | unavailable | unavailable | from_tracking_start | 1 | 0 |
 | completion (pending) | unavailable | unavailable | unavailable | 0s | 0s | unavailable | unavailable | from_tracking_start | 0 | 0 |
 <!-- design-metrics:end -->
 
@@ -188,6 +188,7 @@ Every material concern is assigned to a selected artifact or confirmed design de
 | 2026-11-27 | Research | `@architect` returned 11 options across Fixture and Placement Strategy (earliest-fit greedy, deterministic CSP backtracking, embedded CP-SAT), Validation and Failure Model (generator-coupled checks, independent pure whole-schedule validator, PostgreSQL constraint-led validation, independent constraint-model replay), and Preview and Persistence Protocol (tournament row lock, optimistic schedule revision, server-stored preview, serializable save); developer confirmed the set complete. |
 | 2026-11-27 | Evaluate | Recommended deterministic CSP backtracking, independent pure whole-schedule validation, and stateless preview with a tournament row lock. |
 | 2026-11-28 | Solution | Selected Architecture, three decision-specific Designs, Stack and Efforts written; independent architect review OK; quality gate PASS; developer estimates total 10d. |
+| 2026-11-28 | Publish | PR approved by `@DmytroBrat`; updated System Overview, Web, API, PostgreSQL, System Sizing, navigation indexes, terminology and operational-graph relationships; architect review OK. |
 
 ---
 
